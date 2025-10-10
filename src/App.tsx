@@ -12,7 +12,11 @@ function App() {
         <h2 className="text-2xl">
           Welcome to my corner of the internet!
         </h2>
-        <div id="mouse-scroll"></div>
+        <div id="arrow-scroll">
+          <div id="arrow"></div>
+          <div id="arrow"></div>
+          <div id="arrow"></div>
+        </div>
       </div>
 
       <div
