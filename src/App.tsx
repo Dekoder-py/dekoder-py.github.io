@@ -22,7 +22,11 @@ function App() {
         <p>
           I'm a 15 year old programmer based in New Zealand. <br />I enjoy
           programming, homelabbing, Raspberry Pis, and being a part of{" "}
-          <a href="https://hackclub.com" target="_blank" className="underline hover:text-blue-200">
+          <a
+            href="https://hackclub.com"
+            target="_blank"
+            className="underline hover:text-blue-200"
+          >
             Hack Club
           </a>
           !
