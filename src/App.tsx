@@ -57,6 +57,33 @@ function App() {
             </a>{" "}
             game jam.
           </li>
+          <li>
+            <a
+              href="https://github.com/dekoder-py/GuessTheNumber"
+              className="underline hover:text-blue-600 dark:hover:text-blue-400"
+              target="_blank"
+            >
+              Guess The Number
+            </a>{" "}
+            - A number guessing GUI app written in Java with JavaFX.
+          </li>
+          <li>
+            <a
+              href="https://pypi.org/project/pyioweather/"
+              className="underline hover:text-blue-600 dark:hover:text-blue-400"
+              target="_blank"
+            >
+              PyWeather
+            </a>{" "}
+            - A CLI weather app written in Python with data from{" "}
+            <a
+              href="https://tomorrow.io"
+              className="underline hover:text-blue-600 dark:hover:text-blue-400"
+              target="_blank"
+            >
+              Tomorrow.io
+            </a>.
+          </li>
         </ul>
       </div>
 
