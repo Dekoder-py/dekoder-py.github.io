@@ -22,12 +22,24 @@ function App() {
         <p>
           I'm a 15 year old programmer based in New Zealand. <br />I enjoy
           programming, homelabbing, Raspberry Pis, and being a part of{" "}
-          <a href="https://hackclub.com" target="_blank">
+          <a href="https://hackclub.com" target="_blank" className="underline hover:text-blue-200">
             Hack Club
           </a>
           !
         </p>
       </div>
+
+      <footer className="items-center justify-center text-center bg-gray-200 text-black p-10">
+        Made in 2025 by Dekoder-py (Kyle). Source code{" "}
+        <a
+          href="https://github.com/dekoder-py/react-website"
+          target="_blank"
+          className="underline hover:text-blue-600"
+        >
+          here
+        </a>
+        .
+      </footer>
     </>
   );
 }
