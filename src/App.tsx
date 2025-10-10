@@ -25,7 +25,7 @@ function App() {
           <a
             href="https://hackclub.com"
             target="_blank"
-            className="underline hover:text-blue-200"
+            className="underline hover:text-blue-600 dark:hover:text-blue-400"
           >
             Hack Club
           </a>
@@ -33,12 +33,39 @@ function App() {
         </p>
       </div>
 
+      <div
+        id="projects"
+        className="justify-center items-center text-center pb-20"
+      >
+        <h2 className="text-2xl font-bold">Things I've Made</h2>
+        <ul className="list-disc list-inside">
+          <li>
+            <a
+              href="https://dekoder-py.itch.io/daydream-virus-shooter"
+              target="_blank"
+              className="underline hover:text-blue-600 dark:hover:text-blue-400"
+            >
+              Virus Shooter
+            </a>{" "}
+            - A 2D Platformer I made with some friends in &gt;12 hours for the{" "}
+            <a
+              href="https://daydream.hackclub.com"
+              className="underline hover:text-blue-600 dark:hover:text-blue-400"
+              target="_blank"
+            >
+              Daydream
+            </a>{" "}
+            game jam.
+          </li>
+        </ul>
+      </div>
+
       <footer className="items-center justify-center text-center bg-gray-200 dark:bg-[#2e2e2e] text-black dark:text-white/90 p-10">
         Made in 2025 by Dekoder-py (Kyle). Source code{" "}
         <a
           href="https://github.com/dekoder-py/react-website"
           target="_blank"
-          className="underline hover:text-blue-600"
+          className="underline hover:text-blue-600 dark:hover:text-blue-400"
         >
           here
         </a>
