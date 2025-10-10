@@ -29,7 +29,7 @@ function App() {
         </p>
       </div>
 
-      <footer className="items-center justify-center text-center bg-gray-200 text-black p-10">
+      <footer className="items-center justify-center text-center bg-gray-200 dark:bg-[#2e2e2e] text-black dark:text-white/90 p-10">
         Made in 2025 by Dekoder-py (Kyle). Source code{" "}
         <a
           href="https://github.com/dekoder-py/react-website"
