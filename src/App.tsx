@@ -3,22 +3,22 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Blog from "./pages/Blog";
-import "./App.css";
+import "./Style.css";
 
 function App() {
   return (
     <>
-      <nav className="p-4 dark:bg-[#2e2e2e]">
-        <Link className="mr-4" to="/">
+      <nav className="p-4 bg-gray-200 dark:bg-[#2e2e2e] underline">
+        <Link className="mr-4 hover:text-blue-600 dark:hover:text-blue-400" to="/">
           Home
         </Link>
-        <Link className="mr-4" to="/about">
+        <Link className="mr-4 hover:text-blue-600 dark:hover:text-blue-400" to="/about">
           About
         </Link>
-        <Link className="mr-4" to="/projects">
+        <Link className="mr-4 hover:text-blue-600 dark:hover:text-blue-400" to="/projects">
           Projects
         </Link>
-        <Link className="mr-4" to="/blog">
+        <Link className="mr-4 hover:text-blue-600 dark:hover:text-blue-400" to="/blog">
           Blog
         </Link>
       </nav>
