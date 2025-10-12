@@ -7,19 +7,23 @@ export default function About() {
   useEffect(() => {
     async function fetchLastSong() {
       const track = await getLastPlayedTrack();
+
+      if (!track) {
+        setLastSong("I tried to search LastFM but something went wrong :(");
+        return;
+      }
+
+      const isNowPlaying = track["@attr"]?.nowplaying === "true";
+
       if (track) {
-        try {
-          if (track["@attr"].nowplaying)
-            setLastSong(
-              `I'm currently listening to ${track.name} by ${track.artist["#text"]}.`,
-            );
-        } catch (TypeError) {
+        if (isNowPlaying)
+          setLastSong(
+            `I'm currently listening to ${track.name} by ${track.artist["#text"]}.`,
+          );
+        else
           setLastSong(
             `The last song I listened to was ${track.name} by ${track.artist["#text"]}`,
           );
-        }
-      } else {
-        setLastSong("I tried to search LastFM but something went wrong :(");
       }
     }
 
