@@ -1,38 +1,40 @@
 import { useEffect, useState } from "react";
 import { getLastPlayedTrack } from "../LastFM";
 
+interface TrackInfo {
+  name: string;
+  artist: string;
+  url: string;
+  nowPlaying: boolean;
+}
+
 export default function About() {
-  const [lastSong, setLastSong] = useState<string>();
+  const [track, setTrack] = useState<TrackInfo | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     async function fetchLastSong() {
-      const track = await getLastPlayedTrack();
+      const data = await getLastPlayedTrack();
 
-      if (!track) {
-        setLastSong("I tried to search LastFM but something went wrong :(");
+      if (!data) {
+        setError("I tried to search LastFM but something went wrong :(");
         return;
       }
 
-      const isNowPlaying = track["@attr"]?.nowplaying === "true";
+      const nowPlaying = data["@attr"]?.nowplaying === "true";
 
-      if (track) {
-        if (isNowPlaying)
-          setLastSong(
-            `I'm currently listening to ${track.name} by ${track.artist["#text"]}.`,
-          );
-        else
-          setLastSong(
-            `The last song I listened to was ${track.name} by ${track.artist["#text"]}`,
-          );
-      }
+      setTrack({
+        name: data.name,
+        artist: data.artist["#text"],
+        url: data.url,
+        nowPlaying,
+      });
+      setError(null);
     }
 
-    // Fetch immediately
     fetchLastSong();
-
-    // Fetch every 15 seconds
     const interval = setInterval(fetchLastSong, 150 * 1000);
-    return () => clearInterval(interval); // Cleanup on unmount
+    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -53,7 +55,40 @@ export default function About() {
         </a>
         !
         <br />
-        Sometimes I listen to music. <span id="lastFM-song">{lastSong}</span>
+        Sometimes I listen to music.{" "}
+        {error ? (
+          <span>{error}</span>
+        ) : track ? (
+          <>
+            {track.nowPlaying ? (
+              <>
+                I&apos;m currently listening to{" "}
+                <a
+                  href={track.url}
+                  target="_blank"
+                  className="underline hover:text-blue-600 dark:hover:text-blue-400"
+                >
+                  {track.name}
+                </a>{" "}
+                by {track.artist}.
+              </>
+            ) : (
+              <>
+                The last song I listened to was{" "}
+                <a
+                  href={track.url}
+                  target="_blank"
+                  className="underline hover:text-blue-600 dark:hover:text-blue-400"
+                >
+                  {track.name}
+                </a>{" "}
+                by {track.artist}.
+              </>
+            )}
+          </>
+        ) : (
+          ""
+        )}
       </p>
     </div>
   );
