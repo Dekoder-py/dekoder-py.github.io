@@ -15,7 +15,7 @@ export default function About() {
     // Fetch immediately
     fetchLastSong();
 
-    // Fetch every 10 seconds
+    // Fetch every 15 seconds
     const interval = setInterval(fetchLastSong, 150 * 1000);
     return () => clearInterval(interval); // Cleanup on unmount
   }, []);
