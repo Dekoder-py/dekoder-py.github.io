@@ -2,13 +2,13 @@ import { useEffect, useState } from "react";
 import { getLastPlayedTrack } from "../LastFM";
 
 export default function About() {
-  const [lastSong, setLastSong] = useState<string>("nothing :(");
+  const [lastSong, setLastSong] = useState<string>("OH NO! It seems I couldn't find anything :(");
 
   useEffect(() => {
     async function fetchLastSong() {
       const track = await getLastPlayedTrack();
       if (track) {
-        setLastSong(`${track.artist["#text"]} - ${track.name}`);
+        setLastSong(`${track.artist["#text"]} - ${track.name}.`);
       }
     }
 
@@ -39,7 +39,7 @@ export default function About() {
         !
         <br />
         Sometimes I listen to music. The last thing I listened to was:{" "}
-        <span id="lastFM-song">{lastSong}</span>.
+        <span id="lastFM-song">{lastSong}</span>
       </p>
     </div>
   );
