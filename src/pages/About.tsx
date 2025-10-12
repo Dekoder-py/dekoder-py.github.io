@@ -2,13 +2,24 @@ import { useEffect, useState } from "react";
 import { getLastPlayedTrack } from "../LastFM";
 
 export default function About() {
-  const [lastSong, setLastSong] = useState<string>("OH NO! It seems I couldn't find anything :(");
+  const [lastSong, setLastSong] = useState<string>();
 
   useEffect(() => {
     async function fetchLastSong() {
       const track = await getLastPlayedTrack();
       if (track) {
-        setLastSong(`${track.artist["#text"]} - ${track.name}.`);
+        try {
+          if (track["@attr"].nowplaying)
+            setLastSong(
+              `I'm currently listening to ${track.name} by ${track.artist["#text"]}.`,
+            );
+        } catch (TypeError) {
+          setLastSong(
+            `The last song I listened to was ${track.name} by ${track.artist["#text"]}`,
+          );
+        }
+      } else {
+        setLastSong("I tried to search LastFM but something went wrong :(");
       }
     }
 
@@ -38,8 +49,7 @@ export default function About() {
         </a>
         !
         <br />
-        Sometimes I listen to music. The last thing I listened to was:{" "}
-        <span id="lastFM-song">{lastSong}</span>
+        Sometimes I listen to music. <span id="lastFM-song">{lastSong}</span>
       </p>
     </div>
   );
