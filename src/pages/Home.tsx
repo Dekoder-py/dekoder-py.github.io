@@ -6,7 +6,7 @@ export default function Home() {
     >
       <img
         className="mx-auto"
-        src="/wave-club-penguin.gif"
+        src="/assets/wave-club-penguin.gif"
         alt="Waving Club Penguin"
       />
       <h1 className="text-3xl font-bold">Hi! I'm Kyle.</h1>
