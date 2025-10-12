@@ -26,7 +26,7 @@ async function getRecentTracks(
   username: string,
   apiKey: string,
 ): Promise<Track[] | null> {
-  const url = `http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${username}&api_key=${apiKey}&format=json`;
+  const url = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${username}&api_key=${apiKey}&format=json`;
 
   try {
     const response = await fetch(url);
