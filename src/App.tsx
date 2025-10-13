@@ -8,8 +8,8 @@ import "./Style.css";
 function App() {
   return (
     <>
-      <nav className="p-4 bg-gray-200 dark:bg-[#2e2e2e] underline">
-        <Link className="mr-4 hover:text-blue-600 dark:hover:text-blue-400" to="/">
+      <nav className="p-4 bg-latte-mantle dark:bg-macchiato-mantle underline">
+        <Link className="mr-4 hover:text-macchiato-blue dark:hover:text-macchiato-blue" to="/">
           Home
         </Link>
         <Link className="mr-4 hover:text-blue-600 dark:hover:text-blue-400" to="/about">

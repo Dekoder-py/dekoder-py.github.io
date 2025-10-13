@@ -1,5 +1,24 @@
 @import "tailwindcss";
 
+@theme {
+  --color-macchiato-crust: #181926;
+  --color-macchiato-mantle: #1e2030;
+  --color-macchiato-base: #24273a;
+  --color-macchiato-surface-0: #363a4f;
+  --color-macchiato-blue: #8aadf4;
+  --color-macchiato-lavender: #b7bdf8;
+
+
+
+  --color-latte-crust: #dce0e8;
+  --color-latte-mantle: #e6e9ef;
+  --color-latte-base: #eff1f5;
+  --color-latte-surface-0: #ccd0da;
+  --color-latte-blue: #1e66f5;
+  --color-latte-lavender: #7287fd;
+
+};
+
 #arrow-scroll {
   position: relative;
   height: 4em;
