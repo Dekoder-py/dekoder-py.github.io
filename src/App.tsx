@@ -2,6 +2,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import NotFound from "./pages/NotFound";
 import "./Style.css";
 
 function App() {
@@ -26,6 +27,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <footer className="items-center justify-center text-center bg-gray-200 dark:bg-[#2e2e2e] text-black dark:text-white/90 p-10">
         Made in 2025 by Dekoder-py (Kyle). Source code{" "}
