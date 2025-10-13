@@ -3,12 +3,11 @@
   <head>
     <meta charset="utf-8">
     <script type="text/javascript">
-      // Redirect to index.html and preserve path as hash (for react hash router to handle)
-      const redirect = '/' + window.location.pathname;
-      window.location.replace(window.location.origin + '/#' + redirect);
+      // Redirect to the HashRouter version (it'll deal with 404 or loading a page)
+      const path = window.location.pathname.replace(/^\/+/, '');
+      window.location.replace(window.location.origin + '/#/' + path);
     </script>
   </head>
-  <body>
-  </body>
+  <body></body>
 </html>
 
