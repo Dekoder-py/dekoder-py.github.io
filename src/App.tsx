@@ -2,7 +2,6 @@ import { Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
-import Blog from "./pages/Blog";
 import "./Style.css";
 
 function App() {
@@ -18,7 +17,7 @@ function App() {
         <Link className="mr-4 hover:text-blue-600 dark:hover:text-blue-400" to="/projects">
           Projects
         </Link>
-        <Link className="mr-4 hover:text-blue-600 dark:hover:text-blue-400" to="/blog">
+        <Link className="mr-4 hover:text-blue-600 dark:hover:text-blue-400" to="https://kyle-b.is-a.dev">
           Blog
         </Link>
       </nav>
@@ -27,7 +26,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/blog" element={<Blog />} />
       </Routes>
       <footer className="items-center justify-center text-center bg-gray-200 dark:bg-[#2e2e2e] text-black dark:text-white/90 p-10">
         Made in 2025 by Dekoder-py (Kyle). Source code{" "}
