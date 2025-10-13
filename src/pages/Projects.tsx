@@ -1,25 +1,34 @@
-import { ProjectCard } from "../components/ProjectCard";
+import { ProjectsGrid } from "../components/ProjectGrid";
 import type { Project } from "../types";
 
 export default function Projects() {
-  const virusShooter: Project = {
-    name: "Virus Shooter",
-    description: (
-      <p>
-        A 2D Platformer I made with some friends in under 12 hours for the{" "}
-        <a
-          href="https://daydream.hackclub.com"
-          className="underline hover:text-blue-600 dark:hover:text-blue-400"
-          target="_blank"
-        >
-          Daydream
-        </a>{" "}
-        game jam.
-      </p>
-    ),
-    url: "https://dekoder-py.itch.io/daydream-virus-shooter",
-    imgUrl: "/assets/virus-shooter.png",
-  };
+  const projects: Project[] = [
+    {
+      name: "Virus Shooter",
+      description: (
+        <p>
+          A 2D Platformer I made with some friends in under 12 hours for the{" "}
+          <a
+            href="https://daydream.hackclub.com"
+            className="underline hover:text-blue-600 dark:hover:text-blue-400"
+            target="_blank"
+          >
+            Daydream
+          </a>{" "}
+          game jam.
+        </p>
+      ),
+      url: "https://dekoder-py.itch.io/daydream-virus-shooter",
+      imgUrl: "/assets/virus-shooter.png",
+    },
+
+    {
+      name: "Guess The Number",
+      description: "A number guessing GUI app written in Java with JavaFX.",
+      url: "https://github.com/dekoder-py/GuessTheNumber",
+      imgUrl: "/assets/guess-the-number.png",
+    },
+  ];
 
   return (
     <div
@@ -27,19 +36,8 @@ export default function Projects() {
       className="h-screen flex flex-col items-center justify-center text-center space-y-8"
     >
       <h2 className="text-2xl font-bold">Things I've Made</h2>
-      <ProjectCard project={virusShooter} />
-
+      <ProjectsGrid projects={projects} />
       <ul className="list-disc list-inside">
-        <li>
-          <a
-            href="https://github.com/dekoder-py/GuessTheNumber"
-            className="underline hover:text-blue-600 dark:hover:text-blue-400"
-            target="_blank"
-          >
-            Guess The Number
-          </a>{" "}
-          - A number guessing GUI app written in Java with JavaFX.
-        </li>
         <li>
           <a
             href="https://pypi.org/project/pyioweather/"
