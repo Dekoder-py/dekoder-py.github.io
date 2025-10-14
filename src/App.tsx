@@ -1,4 +1,5 @@
 import { Routes, Route, Link } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/next";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
@@ -10,19 +11,34 @@ function App() {
   return (
     <>
       <nav className="p-4 bg-latte-mantle dark:bg-macchiato-mantle underline">
-        <Link className="mr-4 hover:text-macchiato-blue dark:hover:text-macchiato-blue" to="/">
+        <Link
+          className="mr-4 hover:text-macchiato-blue dark:hover:text-macchiato-blue"
+          to="/"
+        >
           Home
         </Link>
-        <Link className="mr-4 hover:text-blue-600 dark:hover:text-blue-400" to="/about">
+        <Link
+          className="mr-4 hover:text-blue-600 dark:hover:text-blue-400"
+          to="/about"
+        >
           About
         </Link>
-        <Link className="mr-4 hover:text-blue-600 dark:hover:text-blue-400" to="/projects">
+        <Link
+          className="mr-4 hover:text-blue-600 dark:hover:text-blue-400"
+          to="/projects"
+        >
           Projects
         </Link>
-        <Link className="mr-4 hover:text-blue-600 dark:hover:text-blue-400" to="/my-setup">
+        <Link
+          className="mr-4 hover:text-blue-600 dark:hover:text-blue-400"
+          to="/my-setup"
+        >
           My Setup
         </Link>
-        <Link className="mr-4 hover:text-blue-600 dark:hover:text-blue-400" to="https://kyle-b.is-a.dev">
+        <Link
+          className="mr-4 hover:text-blue-600 dark:hover:text-blue-400"
+          to="https://kyle-b.is-a.dev"
+        >
           Blog
         </Link>
       </nav>
@@ -46,6 +62,7 @@ function App() {
         </a>
         .
       </footer>
+      <Analytics />
     </>
   );
 }
