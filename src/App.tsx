@@ -2,6 +2,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import MySetup from "./pages/MySetup";
 import NotFound from "./pages/NotFound";
 import "./Style.css";
 
@@ -18,6 +19,9 @@ function App() {
         <Link className="mr-4 hover:text-blue-600 dark:hover:text-blue-400" to="/projects">
           Projects
         </Link>
+        <Link className="mr-4 hover:text-blue-600 dark:hover:text-blue-400" to="/my-setup">
+          My Setup
+        </Link>
         <Link className="mr-4 hover:text-blue-600 dark:hover:text-blue-400" to="https://kyle-b.is-a.dev">
           Blog
         </Link>
@@ -27,6 +31,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/my-setup" element={<MySetup />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>
