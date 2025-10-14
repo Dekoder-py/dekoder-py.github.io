@@ -30,7 +30,7 @@ function App() {
 
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <footer className="items-center justify-center text-center bg-gray-200 dark:bg-[#2e2e2e] text-black dark:text-white/90 p-10">
+      <footer className="items-center justify-center text-center text-latte-text dark:text-macchiato-text p-10 bg-latte-mantle dark:bg-macchiato-mantle">
         Made in 2025 by Dekoder-py (Kyle). Source code{" "}
         <a
           href="https://github.com/dekoder-py/react-website"

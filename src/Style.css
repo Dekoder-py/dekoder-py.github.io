@@ -7,8 +7,7 @@
   --color-macchiato-surface-0: #363a4f;
   --color-macchiato-blue: #8aadf4;
   --color-macchiato-lavender: #b7bdf8;
-
-
+  --color-macchiato-text: #cad3f5;
 
   --color-latte-crust: #dce0e8;
   --color-latte-mantle: #e6e9ef;
@@ -16,8 +15,8 @@
   --color-latte-surface-0: #ccd0da;
   --color-latte-blue: #1e66f5;
   --color-latte-lavender: #7287fd;
-
-};
+  --color-latte-text: #4c4f69;
+}
 
 #arrow-scroll {
   position: relative;
