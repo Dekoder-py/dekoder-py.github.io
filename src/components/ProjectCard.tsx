@@ -8,7 +8,14 @@ export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div
       id={project.name + "-card"}
-      className="border-4 p-5 border-solid rounded-md border-latte-lavender dark:border-macchiato-lavender w-80 dark:bg-macchiato-surface-0 bg-latte-surface-0"
+      className="
+    border-4 border-solid border-latte-lavender dark:border-macchiato-lavender
+    w-full max-w-sm
+    rounded-lg shadow-md p-4 flex flex-col
+    bg-latte-surface-0 dark:bg-macchiato-surface-0
+    hover:shadow-2xl hover:scale-[1.02]
+    transition-all duration-300 ease-in-out
+  "
     >
       <a href={project.url} target="_blank">
         <img
