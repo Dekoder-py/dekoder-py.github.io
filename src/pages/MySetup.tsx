@@ -12,6 +12,7 @@ export default function MySetup() {
         <li>Some DELL monitor (not sure what model)</li>
         <li>iPhone 13 Mini</li>
         <li>Apple Watch SE</li>
+        <li>CMF Buds Pro 2 (from Summer of Making)</li>
       </ul>
     </div>
   );
