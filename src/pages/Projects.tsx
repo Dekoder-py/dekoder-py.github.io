@@ -28,6 +28,32 @@ export default function Projects() {
       url: "https://github.com/dekoder-py/GuessTheNumber",
       imgUrl: "/assets/guess-the-number.png",
     },
+
+    {
+      name: "PyWeather",
+      description: (
+        <p>
+          A CLI weather app written in Python with data from{" "}
+          <a
+            href="https://tomorrow.io"
+            className="underline hover:text-blue-600 dark:hover:text-blue-400"
+            target="_blank"
+          >
+            Tomorrow.io
+          </a>
+          .
+        </p>
+      ),
+      url: "https://pypi.org/project/pyioweather/",
+      imgUrl: "/assets/pyweather.png",
+    },
+
+    {
+      name: "The Restless Dungeon",
+      description: "A text-based adventure game written in Python.",
+      url: "https://pypi.org/project/restless-dungeon/",
+      imgUrl: "/assets/restless-dungeon.png",
+    },
   ];
 
   return (
@@ -37,36 +63,6 @@ export default function Projects() {
     >
       <h2 className="text-2xl font-bold">Things I've Made</h2>
       <ProjectsGrid projects={projects} />
-      <ul className="list-disc list-inside">
-        <li>
-          <a
-            href="https://pypi.org/project/pyioweather/"
-            className="underline hover:text-blue-600 dark:hover:text-blue-400"
-            target="_blank"
-          >
-            PyWeather
-          </a>{" "}
-          - A CLI weather app written in Python with data from{" "}
-          <a
-            href="https://tomorrow.io"
-            className="underline hover:text-blue-600 dark:hover:text-blue-400"
-            target="_blank"
-          >
-            Tomorrow.io
-          </a>
-          .
-        </li>
-        <li>
-          <a
-            href="https://pypi.org/project/restless-dungeon/"
-            className="underline hover:text-blue-600 dark:hover:text-blue-400"
-            target="_blank"
-          >
-            The Restless Dungeon
-          </a>{" "}
-          - A text-based adventure game written in Python.
-        </li>
-      </ul>
     </div>
   );
 }
