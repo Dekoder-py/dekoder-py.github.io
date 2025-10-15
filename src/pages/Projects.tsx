@@ -10,7 +10,7 @@ export default function Projects() {
           A 2D Platformer I made with some friends in under 12 hours for the{" "}
           <a
             href="https://daydream.hackclub.com"
-            className="underline hover:text-blue-600 dark:hover:text-blue-400"
+            className="underline hover:text-latte-blue dark:hover:text-macchiato-blue hover:font-bold"
             target="_blank"
           >
             Daydream
@@ -36,7 +36,7 @@ export default function Projects() {
           A CLI weather app written in Python with data from{" "}
           <a
             href="https://tomorrow.io"
-            className="underline hover:text-blue-600 dark:hover:text-blue-400"
+            className="underline hover:text-latte-blue dark:hover:text-macchiato-blue hover:font-bold"
             target="_blank"
           >
             Tomorrow.io
