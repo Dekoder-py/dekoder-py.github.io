@@ -39,7 +39,7 @@ function App() {
           </Link>
           <Link
             className="mr-4 hover:text-latte-blue dark:hover:text-macchiato-blue"
-            to="/blog"
+            to="https://blog.kyle-is-a.dino.icu"
           >
             Blog
           </Link>
