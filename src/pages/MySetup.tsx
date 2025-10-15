@@ -24,7 +24,8 @@ export default function MySetup() {
     },
     {
       itemName: "iPhone 13 Mini",
-      url: "https://support.apple.com/en-us/111873"
+      url: "https://support.apple.com/en-us/111873",
+      desc: "I don't have a phone case."
     },
     {
       itemName: "Apple Watch SE (2nd Generation)",
