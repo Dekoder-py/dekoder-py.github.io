@@ -1,5 +1,6 @@
 import { Routes, Route, Link } from "react-router-dom";
 import { Analytics } from "@vercel/analytics/react";
+import { LuGithub, LuMail } from "react-icons/lu";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
@@ -10,37 +11,54 @@ import "./Style.css";
 function App() {
   return (
     <>
-      <nav className="p-4 bg-latte-mantle dark:bg-macchiato-mantle underline">
-        <Link
-          className="mr-4 hover:text-macchiato-blue dark:hover:text-macchiato-blue"
-          to="/"
-        >
-          Home
-        </Link>
-        <Link
-          className="mr-4 hover:text-blue-600 dark:hover:text-blue-400"
-          to="/about"
-        >
-          About
-        </Link>
-        <Link
-          className="mr-4 hover:text-blue-600 dark:hover:text-blue-400"
-          to="/projects"
-        >
-          Projects
-        </Link>
-        <Link
-          className="mr-4 hover:text-blue-600 dark:hover:text-blue-400"
-          to="/my-setup"
-        >
-          My Setup
-        </Link>
-        <Link
-          className="mr-4 hover:text-blue-600 dark:hover:text-blue-400"
-          to="https://kyle-b.is-a.dev"
-        >
-          Blog
-        </Link>
+      <nav className="flex items-center justify-between p-4 bg-latte-mantle dark:bg-macchiato-mantle underline">
+        <div id="site-links">
+          <Link
+            className="mr-4 hover:text-latte-blue dark:hover:text-macchiato-blue"
+            to="/"
+          >
+            Home
+          </Link>
+          <Link
+            className="mr-4 hover:text-latte-blue dark:hover:text-macchiato-blue"
+            to="/about"
+          >
+            About
+          </Link>
+          <Link
+            className="mr-4 hover:text-latte-blue dark:hover:text-macchiato-blue"
+            to="/projects"
+          >
+            Projects
+          </Link>
+          <Link
+            className="mr-4 hover:text-latte-blue dark:hover:text-macchiato-blue"
+            to="/my-setup"
+          >
+            My Setup
+          </Link>
+          <Link
+            className="mr-4 hover:text-latte-blue dark:hover:text-macchiato-blue"
+            to="https://kyle-b.is-a.dev"
+          >
+            Blog
+          </Link>
+        </div>
+        <div id="contact" className="flex space-x-4">
+          <a
+            href="https://github.com/Dekoder-py"
+            target="_blank"
+            className="hover:text-latte-blue dark:hover:text-macchiato-blue"
+          >
+            <LuGithub className="w-5 h-5" />
+          </a>
+          <a
+            href="mailto:dekod3r.py@gmail.com"
+            className="hover:text-latte-blue dark:hover:text-macchiato-blue"
+          >
+            <LuMail className="w-5 h-5" />
+          </a>
+        </div>
       </nav>
 
       <Routes>
