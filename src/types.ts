@@ -6,3 +6,8 @@ export interface Project {
   url: string,
   imgUrl: string
 }
+
+export interface GearItem {
+  itemName: string;
+  desc?: string;
+}

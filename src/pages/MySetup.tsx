@@ -1,19 +1,44 @@
+import GearGrid from "../components/GearGrid";
+import type { GearItem } from "../types";
+
 export default function MySetup() {
+  const MyGear: GearItem[] = [
+    {
+      itemName: "M1 MacBook Air (2020)",
+      desc: "It has lots of stickers from Hack Club",
+    },
+    {
+      itemName: "Keychron V1",
+      desc: "Customised with QMK and it has a volume knob!",
+    },
+    {
+      itemName: "Logi MX Master 3S",
+      desc: "It's really comfortable.",
+    },
+    {
+      itemName: "Some DELL monitor",
+      desc: "I'm not sure what model.",
+    },
+    {
+      itemName: "iPhone 13 Mini",
+    },
+    {
+      itemName: "Apple Watch SE",
+      desc: "I have a couple of bands too.",
+    },
+    {
+      itemName: "CMF Buds Pro 2",
+      desc: "I got them from Summer of Making!",
+    },
+  ];
+
   return (
     <div
       id="my-setup"
       className="h-screen flex flex-col items-center justify-center text-center space-y-8"
     >
       <h1 className="text-3xl font-bold">My Setup / Gear</h1>
-      <ul className="list-inside list-disc">
-        <li>M1 MacBook Air (2020) with lots of stickers from Hack Club</li>
-        <li>Keychron V1 (With knob) or my MacBook keyboard</li>
-        <li>Logi MX Master 3S or my MacBook trackpad</li>
-        <li>Some DELL monitor (not sure what model)</li>
-        <li>iPhone 13 Mini</li>
-        <li>Apple Watch SE</li>
-        <li>CMF Buds Pro 2 (from Summer of Making)</li>
-      </ul>
+      <GearGrid gearItems={MyGear} />
     </div>
   );
 }
