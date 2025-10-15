@@ -9,5 +9,6 @@ export interface Project {
 
 export interface GearItem {
   itemName: string;
+  url?: string;
   desc?: string;
 }
