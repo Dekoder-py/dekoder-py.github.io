@@ -1,6 +1,7 @@
 {
   "rewrites": [
-    { "source": "/#/blog/:path*", "destination": "https://blog-site-eight-iota.vercel.app/:path*" }
+    { "source": "/blog", "destination": "https://blog-site-eight-iota.vercel.app/" },
+    { "source": "/blog/:path*", "destination": "https://blog-site-eight-iota.vercel.app/:path*" }
   ]
 }
 
