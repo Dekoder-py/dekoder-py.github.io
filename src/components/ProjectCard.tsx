@@ -9,13 +9,14 @@ export function ProjectCard({ project }: ProjectCardProps) {
     <div
       id={project.name + "-card"}
       className="
-    border-4 border-solid border-latte-lavender dark:border-macchiato-lavender
-    w-full max-w-sm
-    rounded-lg shadow-md p-4 flex flex-col
-    bg-latte-surface-0 dark:bg-macchiato-surface-0
-    hover:shadow-2xl hover:scale-[1.02]
-    transition-all duration-300 ease-in-out
-  "
+      border-4 border-solid border-latte-lavender dark:border-macchiato-lavender
+      w-full max-w-sm
+      rounded-lg shadow-md p-4 flex flex-col
+      bg-latte-surface-0 dark:bg-macchiato-surface-0
+      hover:shadow-2xl hover:scale-[1.02]
+      hover:bg-latte-surface-1 dark:hover:bg-macchiato-surface-1
+      hover:text-latte-blue dark:hover:text-macchiato-blue
+      transition-all duration-300 ease-in-out"
     >
       <a href={project.url} target="_blank">
         <img
