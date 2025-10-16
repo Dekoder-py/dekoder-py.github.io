@@ -9,19 +9,6 @@ type Track = {
   "@attr"?: { nowplaying: string };
 };
 
-type RecentTracksResponse = {
-  recenttracks: {
-    track: Track[];
-    "@attr": {
-      user: string;
-      page: string;
-      totalPages: string;
-      perPage: string;
-      total: string;
-    };
-  };
-};
-
 async function getRecentTracks(): Promise<Track[] | null> {
   try {
     const response = await fetch("/api/lastfm");
