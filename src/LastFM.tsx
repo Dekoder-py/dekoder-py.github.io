@@ -22,31 +22,20 @@ type RecentTracksResponse = {
   };
 };
 
-async function getRecentTracks(
-  username: string,
-  apiKey: string,
-): Promise<Track[] | null> {
-  const url = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${username}&api_key=${apiKey}&format=json`;
-
+async function getRecentTracks(): Promise<Track[] | null> {
   try {
-    const response = await fetch(url);
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-
-    const data: RecentTracksResponse = await response.json();
+    const response = await fetch("/api/lastfm");
+    if (!response.ok) throw new Error("Failed to fetch");
+    const data = await response.json();
     return data.recenttracks.track;
   } catch (error) {
-    console.error("Failed to fetch recent tracks:", error);
+    console.error(error);
     return null;
   }
 }
 
-const API_KEY = "11b81837efe1582587af2de11af1d7b6";
-const USERNAME = "your-nemesis";
-
 export async function getLastPlayedTrack() {
-  const tracks = await getRecentTracks(USERNAME, API_KEY);
+  const tracks = await getRecentTracks();
 
   if (!tracks || tracks.length === 0) {
     console.log("No tracks found for this user.");
