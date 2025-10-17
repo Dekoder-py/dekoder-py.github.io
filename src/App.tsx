@@ -11,8 +11,11 @@ import "./Style.css";
 function App() {
   return (
     <>
-      <nav className="flex items-center justify-between p-4 bg-latte-mantle dark:bg-macchiato-mantle underline">
-        <div id="site-links">
+      <nav className="flex flex-col sm:flex-row items-center justify-between p-4 bg-latte-mantle dark:bg-macchiato-mantle underline">
+        <div
+          id="site-links"
+          className="flex flex-wrap justify-center sm:justify-start mb-2 sm:mb-0"
+        >
           <Link
             className="mr-4 hover:text-latte-blue dark:hover:text-macchiato-blue"
             to="/"
@@ -44,6 +47,7 @@ function App() {
             Blog
           </Link>
         </div>
+
         <div id="contact" className="flex space-x-4">
           <a
             href="https://github.com/Dekoder-py"
