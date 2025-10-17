@@ -37,6 +37,11 @@ export default function MySetup() {
       url: "https://intl.nothing.tech/products/cmf-buds-pro-2?Colour=Dark+Grey",
       desc: "I got them from Summer of Making!",
     },
+    {
+      itemName: "Rubber Duck with a laptop",
+      url: "https://sunnysideducks.com.au/products/rubber-duck-with-notebook-rubber-duck?_pos=1&_sid=9f2f6d086&_ss=r",
+      desc: "I got this with a grant from Summer of Making!",
+    },
   ];
 
   return (
