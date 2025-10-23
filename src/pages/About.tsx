@@ -44,7 +44,7 @@ export default function About() {
     >
       <h2 className="text-2xl font-bold">About Me</h2>
       <p>
-        I'm a 15 year old programmer based in New Zealand. <br />I enjoy
+        I'm a 16 year old programmer based in New Zealand. <br />I enjoy
         programming, homelabbing, Raspberry Pis, and being a part of{" "}
         <a
           href="https://hackclub.com"
