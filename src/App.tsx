@@ -57,7 +57,7 @@ function App() {
             <LuGithub className="w-5 h-5" />
           </a>
           <a
-            href="mailto:dekod3r.py@gmail.com"
+            href="mailto:hey@codingcorner.dev"
             className="hover:text-latte-blue dark:hover:text-macchiato-blue"
           >
             <LuMail className="w-5 h-5" />
