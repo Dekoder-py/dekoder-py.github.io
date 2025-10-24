@@ -8,7 +8,7 @@ export default function GearCard({ GearItem }: GearCardProps) {
   return (
     <div
       id={GearItem.itemName + "-card"}
-      className="cursor-target border-solid border-4 border-latte-lavender dark:border-macchiato-lavender
+      className="border-solid border-4 border-latte-lavender dark:border-macchiato-lavender
       w-full max-w-sm
       rounded-lg shadow-md p-6 flex flex-col
       bg-latte-surface-0 dark:bg-macchiato-surface-0

@@ -1,7 +1,6 @@
 import { Routes, Route, Link } from "react-router-dom";
 import { Analytics } from "@vercel/analytics/react";
 import { LuGithub, LuMail } from "react-icons/lu";
-import TargetCursor from "./components/TargetCursor";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
@@ -12,39 +11,37 @@ import "./Style.css";
 function App() {
   return (
     <>
-      <TargetCursor spinDuration={2} hideDefaultCursor={true} />
-
       <nav className="flex flex-col sm:flex-row items-center justify-between p-4 bg-latte-mantle dark:bg-macchiato-mantle underline">
         <div
           id="site-links"
           className="flex flex-wrap justify-center sm:justify-start mb-2 sm:mb-0"
         >
           <Link
-            className="cursor-target mr-4 hover:text-latte-blue dark:hover:text-macchiato-blue"
+            className="mr-4 hover:text-latte-blue dark:hover:text-macchiato-blue"
             to="/"
           >
             Home
           </Link>
           <Link
-            className="cursor-target mr-4 hover:text-latte-blue dark:hover:text-macchiato-blue"
+            className="mr-4 hover:text-latte-blue dark:hover:text-macchiato-blue"
             to="/about"
           >
             About
           </Link>
           <Link
-            className="cursor-target mr-4 hover:text-latte-blue dark:hover:text-macchiato-blue"
+            className="mr-4 hover:text-latte-blue dark:hover:text-macchiato-blue"
             to="/projects"
           >
             Projects
           </Link>
           <Link
-            className="cursor-target mr-4 hover:text-latte-blue dark:hover:text-macchiato-blue"
+            className="mr-4 hover:text-latte-blue dark:hover:text-macchiato-blue"
             to="/my-setup"
           >
             My Setup
           </Link>
           <Link
-            className="cursor-target mr-4 hover:text-latte-blue dark:hover:text-macchiato-blue"
+            className="mr-4 hover:text-latte-blue dark:hover:text-macchiato-blue"
             to="https://blog.codingcorner.dev"
           >
             Blog
@@ -55,13 +52,13 @@ function App() {
           <a
             href="https://github.com/Dekoder-py"
             target="_blank"
-            className="cursor-target hover:text-latte-blue dark:hover:text-macchiato-blue"
+            className="hover:text-latte-blue dark:hover:text-macchiato-blue"
           >
             <LuGithub className="w-5 h-5" />
           </a>
           <a
             href="mailto:kyle@codingcorner.dev"
-            className="cursor-target hover:text-latte-blue dark:hover:text-macchiato-blue"
+            className="hover:text-latte-blue dark:hover:text-macchiato-blue"
           >
             <LuMail className="w-5 h-5" />
           </a>

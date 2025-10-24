@@ -8,7 +8,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div
       id={project.name + "-card"}
-      className="cursor-target
+      className="
       border-4 border-solid border-latte-lavender dark:border-macchiato-lavender
       w-full max-w-sm
       rounded-lg shadow-md p-4 flex flex-col
