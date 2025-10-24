@@ -47,7 +47,7 @@ export default function MySetup() {
   return (
     <div
       id="my-setup"
-      className="min-h-screen flex flex-col items-center justify-center text-center space-y-8"
+      className="min-h-screen flex flex-col items-center justify-center text-center space-y-8 mx-4"
     >
       <h1 className="text-3xl font-bold pt-10">My Setup</h1>
       <GearGrid gearItems={MyGear} />

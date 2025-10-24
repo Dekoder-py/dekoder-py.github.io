@@ -59,7 +59,7 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="min-h-screen flex flex-col items-center justify-center text-center space-y-8"
+      className="min-h-screen flex flex-col items-center justify-center text-center space-y-8 mx-4"
     >
       <h2 className="pt-10 text-2xl font-bold">Things I've Made</h2>
       <ProjectsGrid projects={projects} />

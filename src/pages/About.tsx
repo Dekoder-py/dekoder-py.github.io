@@ -40,7 +40,7 @@ export default function About() {
   return (
     <div
       id="about"
-      className="h-screen flex flex-col items-center justify-center text-center space-y-8"
+      className="h-screen flex flex-col items-center justify-center text-center space-y-8 mx-4"
     >
       <h2 className="text-2xl font-bold">About Me</h2>
       <p>
