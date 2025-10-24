@@ -1,3 +1,5 @@
+import SplitText from "../components/SplitText.tsx";
+
 export default function Home() {
   return (
     <div
@@ -9,7 +11,7 @@ export default function Home() {
         src="/assets/wave-club-penguin.gif"
         alt="Waving Club Penguin"
       />
-      <h1 className="text-3xl font-bold">Hi! I'm Kyle.</h1>
+      <SplitText text="Hi! I'm Kyle." className="text-3xl font-bold" />
       <h2 className="text-2xl">Welcome to my corner of the internet!</h2>
     </div>
   );
