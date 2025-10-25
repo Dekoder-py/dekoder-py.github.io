@@ -47,7 +47,7 @@ function App() {
             Blog
           </Link>
           <Link
-            className="mr-4 hover:text-latte-blue dark:hover:text-macchiato-blue"
+            className="mr-4 hover:text-latte-peach dark:hover:text-macchiato-peach"
             to="https://trickortreat.codingcorner.dev"
           >
             Halloween
