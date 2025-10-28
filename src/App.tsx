@@ -46,12 +46,6 @@ function App() {
           >
             Blog
           </Link>
-          <Link
-            className="mr-4 hover:text-latte-peach dark:hover:text-macchiato-peach"
-            to="https://trickortreat.codingcorner.dev"
-          >
-            Halloween
-          </Link>
         </div>
 
         <div id="contact" className="flex space-x-4">
