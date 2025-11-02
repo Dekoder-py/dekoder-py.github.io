@@ -13,6 +13,7 @@ export default function Home() {
       />
       <SplitText text="Hi! I'm Kyle." className="text-3xl font-bold" />
       <h2 className="text-2xl">Welcome to my corner of the internet!</h2>
+      <div dangerouslySetInnerHTML={{ __html: "<!DOCTYPE html>" }} />
     </div>
   );
 }
