@@ -46,12 +46,6 @@ function App() {
           >
             Blog
           </Link>
-          <Link
-            className="mr-4 hover:text-latte-blue dark:hover:text-macchiato-blue"
-            to="https://funny.codingcorner.dev"
-          >
-            Hi Josh
-          </Link>
         </div>
 
         <div id="contact" className="flex space-x-4">
