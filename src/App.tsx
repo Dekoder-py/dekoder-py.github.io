@@ -2,7 +2,6 @@ import { Routes, Route, Link } from "react-router-dom";
 import { Analytics } from "@vercel/analytics/react";
 import { LuGithub, LuMail } from "react-icons/lu";
 import Home from "./pages/Home";
-import About from "./pages/About";
 import Projects from "./pages/Projects";
 import MySetup from "./pages/MySetup";
 import NotFound from "./pages/NotFound";
