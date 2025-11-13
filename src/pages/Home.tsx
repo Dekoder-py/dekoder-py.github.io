@@ -44,6 +44,12 @@ export default function Home() {
             alt="eightyeightthirtyone"
           />
         </a>
+        <a href="https://anybrowser.org" target="_blank">
+          <img
+            src="https://anybrowser.org/campaign/bvgraphics/detect.gif"
+            alt="eightyeightthirtyone"
+          />
+        </a>
       </div>
     </div>
   );
