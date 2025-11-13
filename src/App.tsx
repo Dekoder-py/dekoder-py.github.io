@@ -24,12 +24,6 @@ function App() {
           </Link>
           <Link
             className="mr-4 hover:text-latte-blue dark:hover:text-macchiato-blue"
-            to="/about"
-          >
-            About
-          </Link>
-          <Link
-            className="mr-4 hover:text-latte-blue dark:hover:text-macchiato-blue"
             to="/projects"
           >
             Projects
@@ -67,7 +61,6 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/my-setup" element={<MySetup />} />
 
