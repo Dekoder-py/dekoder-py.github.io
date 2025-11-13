@@ -31,7 +31,13 @@ export default function Home() {
           !
         </p>
       </section>
-      <div id="buttons" className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 place-items-center">
+      <div
+        id="buttons"
+        className="
+          grid grid-cols-2 sm:grid-cols-3 md:grid-cols-[repeat(auto-fit,minmax(88px,1fr))] 
+          md:max-w-[calc(8*88px)] gap-4 place-items-center
+        "
+      >
         <a href="https://hack.club" target="_blank">
           <img src="/buttons/hackclub.gif" alt="hack club" />
         </a>
