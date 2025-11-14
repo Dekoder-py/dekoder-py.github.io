@@ -51,19 +51,25 @@ export default function Home() {
           <img src="/buttons/hackclub.gif" alt="hack club" />
         </a>
         <a href="https://github.com" target="_blank">
-          <img src="/buttons/github.gif" alt="hack club" />
+          <img src="/buttons/github.gif" alt="github" />
+        </a>
+        <a href="https://apple.com" target="_blank">
+          <img src="/buttons/macosmade.gif" alt="apple" />
+        </a>
+        <a href="https://neovim.io" target="_blank">
+          <img src="/buttons/neovim.gif" alt="apple" />
+        </a>
+        <a href="https://vim.org" target="_blank">
+          <img src="/buttons/vim.gif" alt="apple" />
+        </a>
+        <a href="https://apple.com" target="_blank">
+          <img src="/buttons/apple.gif" alt="apple" />
         </a>
         <a href="https://eightyeightthirty.one/#" target="_blank">
-          <img
-            src="https://raw.githubusercontent.com/NotNite/eightyeightthirtyone/main/client/public/88x31.png"
-            alt="eightyeightthirtyone"
-          />
+          <img src="/buttons/88x31.png" alt="eightyeightthirtyone" />
         </a>
         <a href="https://anybrowser.org" target="_blank">
-          <img
-            src="https://anybrowser.org/campaign/bvgraphics/detect.gif"
-            alt="eightyeightthirtyone"
-          />
+          <img src="/buttons/detect.gif" alt="anybrowser" />
         </a>
       </div>
     </div>
