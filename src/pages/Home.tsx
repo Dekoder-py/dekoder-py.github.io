@@ -1,4 +1,3 @@
-import SplitText from "../components/SplitText.tsx";
 
 export default function Home() {
   return (
@@ -6,10 +5,7 @@ export default function Home() {
       id="welcome"
       className="h-screen flex flex-col items-center justify-center text-center space-y-8"
     >
-      <SplitText
-        text="Hello! Welcome to codingcorner.dev!"
-        className="text-3xl font-bold"
-      />
+      <h1 className="text-3xl font-bold pt-22">Hello! Welcome to codingcorner.dev!</h1>
       <h2 className="text-2xl">
         I'm Kyle! You've reached my corner of the internet!
       </h2>
