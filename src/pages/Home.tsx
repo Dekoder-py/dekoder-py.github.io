@@ -65,6 +65,9 @@ export default function Home() {
         <a href="https://apple.com" target="_blank">
           <img src="/buttons/apple.gif" alt="apple" />
         </a>
+        <a href="https://notbyai.fyi" target="_blank">
+          <img src="/buttons/notbyai.png" alt="apple" />
+        </a>
         <a href="https://eightyeightthirty.one/#" target="_blank">
           <img src="/buttons/88x31.png" alt="eightyeightthirtyone" />
         </a>
