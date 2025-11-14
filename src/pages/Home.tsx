@@ -59,7 +59,7 @@ export default function Home() {
         <a href="https://neovim.io" target="_blank">
           <img src="/buttons/neovim.gif" alt="apple" />
         </a>
-        <a href="https://vim.org" target="_blank">
+        <a href="https://www.vim.org" target="_blank">
           <img src="/buttons/vim.gif" alt="apple" />
         </a>
         <a href="https://home-assistant.io" target="_blank">
