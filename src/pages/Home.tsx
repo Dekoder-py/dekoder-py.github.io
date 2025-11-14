@@ -7,11 +7,11 @@ export default function Home() {
     >
       <h1 className="text-3xl font-bold pt-22">Hello! Welcome to codingcorner.dev!</h1>
       <h2 className="text-2xl">
-        I'm Kyle! You've reached my corner of the internet!
+        You've reached my corner of the internet!
       </h2>
       <section id="about">
         <p className="px-8">
-          I'm a 16 year old programmer from New Zealand. I make projects, like{" "}
+          I'm Kyle, a 16 year old programmer from New Zealand. I make projects, like{" "}
           <a
             href="https://pypi.org/project/restless-dungeon/"
             className="underline"
