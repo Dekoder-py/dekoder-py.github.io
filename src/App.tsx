@@ -68,7 +68,7 @@ function App() {
       <footer className="items-center justify-center text-center text-latte-text dark:text-macchiato-text p-10 bg-latte-mantle dark:bg-macchiato-mantle">
         Made in 2025 by Dekoder-py (Kyle). Source code{" "}
         <a
-          href="https://github.com/dekoder-py/react-website"
+          href="https://github.com/dekoder-py/codingcorner.dev"
           target="_blank"
           className="underline hover:text-blue-600 dark:hover:text-blue-400"
         >
