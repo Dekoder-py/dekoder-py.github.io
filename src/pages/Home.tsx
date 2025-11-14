@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div
       id="welcome"
-      className="h-screen flex flex-col items-center justify-center text-center space-y-8"
+      className="min-h-screen flex flex-col items-center justify-center text-center space-y-8"
     >
       <h1 className="text-3xl font-bold">
         Hello! Welcome to codingcorner.dev!
