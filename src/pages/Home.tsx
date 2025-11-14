@@ -1,25 +1,29 @@
-
 export default function Home() {
   return (
     <div
       id="welcome"
       className="h-screen flex flex-col items-center justify-center text-center space-y-8"
     >
-      <h1 className="text-3xl font-bold pt-22">Hello! Welcome to codingcorner.dev!</h1>
-      <h2 className="text-2xl">
-        You've reached my corner of the internet!
-      </h2>
+      <h1 className="text-3xl font-bold pt-22">
+        Hello! Welcome to codingcorner.dev!
+      </h1>
+      <h2 className="text-2xl">You've reached my corner of the internet!</h2>
       <section id="about">
         <p className="px-8">
-          I'm Kyle, a 16 year old programmer from New Zealand. I make projects, like{" "}
+          I'm Kyle, a 16 year old programmer from New Zealand. I make projects,
+          like{" "}
           <a
             href="https://pypi.org/project/restless-dungeon/"
-            className="underline"
+            className="underline hover:text-latte-blue dark:hover:text-macchiato-blue"
           >
             this
           </a>
           ! I am fluent in python and C++ and decent at Java. I'm a member of{" "}
-          <a href="https://hack.club" target="_blank" className="underline">
+          <a
+            href="https://hack.club"
+            target="_blank"
+            className="underline hover:text-latte-blue dark:hover:text-macchiato-blue"
+          >
             Hack Club
           </a>
           ! <br />I prefer working in the CLI to any GUI app (which is why I'm
@@ -29,7 +33,7 @@ export default function Home() {
           <a
             href="https://github.com/dekoder-py"
             target="_blank"
-            className="underline"
+            className="underline hover:text-latte-blue dark:hover:text-macchiato-blue"
           >
             GitHub
           </a>
