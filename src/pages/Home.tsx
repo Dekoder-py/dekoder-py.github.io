@@ -62,6 +62,9 @@ export default function Home() {
         <a href="https://vim.org" target="_blank">
           <img src="/buttons/vim.gif" alt="apple" />
         </a>
+        <a href="https://home-assistant.io" target="_blank">
+          <img src="/buttons/home-assistant.gif" alt="anybrowser" />
+        </a>
         <a href="https://apple.com" target="_blank">
           <img src="/buttons/apple.gif" alt="apple" />
         </a>
