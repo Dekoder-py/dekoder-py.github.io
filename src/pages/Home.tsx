@@ -27,7 +27,7 @@ export default function Home() {
             Hack Club
           </a>
           ! <br />I prefer working in the CLI to any GUI app (which is why I'm
-          not the best at UI things XD <br /> I wrote my own neovim config,
+          not the best at UI things XD) <br /> I wrote my own neovim config,
           ghostty config, and tmux config, which are the main tools I use to
           program. You can find them on my{" "}
           <a
