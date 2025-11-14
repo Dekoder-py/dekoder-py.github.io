@@ -47,6 +47,7 @@ export default function Home() {
           md:max-w-[calc(8*88px)] gap-2 place-items-center
         "
       >
+        <img src="/buttons/codingcorner.png" alt="coding corner" />
         <a href="https://hack.club" target="_blank">
           <img src="/buttons/hackclub.gif" alt="hack club" />
         </a>
@@ -54,16 +55,16 @@ export default function Home() {
           <img src="/buttons/github.gif" alt="github" />
         </a>
         <a href="https://apple.com" target="_blank">
-          <img src="/buttons/macosmade.gif" alt="apple" />
+          <img src="/buttons/macosmade.gif" alt="made with macos" />
         </a>
         <a href="https://neovim.io" target="_blank">
-          <img src="/buttons/neovim.gif" alt="apple" />
+          <img src="/buttons/neovim.gif" alt="neovim" />
         </a>
         <a href="https://www.vim.org" target="_blank">
-          <img src="/buttons/vim.gif" alt="apple" />
+          <img src="/buttons/vim.gif" alt="vim" />
         </a>
         <a href="https://home-assistant.io" target="_blank">
-          <img src="/buttons/home-assistant.gif" alt="anybrowser" />
+          <img src="/buttons/home-assistant.gif" alt="home assistatn" />
         </a>
         <a href="https://slitrostudio.me" target="_blank">
           <img
@@ -75,7 +76,7 @@ export default function Home() {
           <img src="/buttons/apple.gif" alt="apple" />
         </a>
         <a href="https://notbyai.fyi" target="_blank">
-          <img src="/buttons/notbyai.png" alt="apple" />
+          <img src="/buttons/notbyai.png" alt="notbyai" />
         </a>
         <a href="https://eightyeightthirty.one/#" target="_blank">
           <img src="/buttons/88x31.png" alt="eightyeightthirtyone" />
