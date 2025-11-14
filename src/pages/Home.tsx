@@ -1,3 +1,5 @@
+import Button88x31 from "../components/Button88x31.tsx";
+
 export default function Home() {
   return (
     <div
@@ -27,10 +29,9 @@ export default function Home() {
             Hack Club
           </a>
           ! <br />I prefer working in the CLI to any GUI app (which is why I'm
-          not the best at UI things XD) <br /> 
-          I've also written my own neovim,
-          ghostty, and tmux configs, which are the main tools I use to
-          program. You can find them on my{" "}
+          not the best at UI things XD) <br />
+          I've also written my own neovim, ghostty, and tmux configs, which are
+          the main tools I use to program. You can find them on my{" "}
           <a
             href="https://github.com/dekoder-py"
             target="_blank"
@@ -41,6 +42,7 @@ export default function Home() {
           !
         </p>
       </section>
+
       <div
         id="buttons"
         className="
@@ -48,43 +50,74 @@ export default function Home() {
           md:max-w-[calc(8*88px)] gap-2 place-items-center
         "
       >
-        <img src="/buttons/codingcorner.png" alt="coding corner" />
-        <a href="https://hack.club" target="_blank">
-          <img src="/buttons/hackclub.gif" alt="hack club" />
-        </a>
-        <a href="https://github.com" target="_blank">
-          <img src="/buttons/github.gif" alt="github" />
-        </a>
-        <a href="https://apple.com" target="_blank">
-          <img src="/buttons/macosmade.gif" alt="made with macos" />
-        </a>
-        <a href="https://neovim.io" target="_blank">
-          <img src="/buttons/neovim.gif" alt="neovim" />
-        </a>
-        <a href="https://www.vim.org" target="_blank">
-          <img src="/buttons/vim.gif" alt="vim" />
-        </a>
-        <a href="https://home-assistant.io" target="_blank">
-          <img src="/buttons/home-assistant.gif" alt="home assistatn" />
-        </a>
-        <a href="https://slitrostudio.me" target="_blank">
-          <img
-            src="https://slitrostudio.me/Slitro2.png"
-            alt="Slitro Studio"
-          />
-        </a>
-        <a href="https://apple.com" target="_blank">
-          <img src="/buttons/apple.gif" alt="apple" />
-        </a>
-        <a href="https://notbyai.fyi" target="_blank">
-          <img src="/buttons/notbyai.png" alt="notbyai" />
-        </a>
-        <a href="https://eightyeightthirty.one/#" target="_blank">
-          <img src="/buttons/88x31.png" alt="eightyeightthirtyone" />
-        </a>
-        <a href="https://anybrowser.org" target="_blank">
-          <img src="/buttons/detect.gif" alt="anybrowser" />
-        </a>
+        <Button88x31 imgSrc="/buttons/codingcorner.png" alt="coding corner" />
+
+        <Button88x31
+          url="https://hack.club"
+          imgSrc="/buttons/hackclub.gif"
+          alt="hack club"
+        />
+
+        <Button88x31
+          url="https://github.com"
+          imgSrc="/buttons/github.gif"
+          alt="github"
+        />
+
+        <Button88x31
+          url="https://apple.com"
+          imgSrc="/buttons/macosmade.gif"
+          alt="made with macOS"
+        />
+
+        <Button88x31
+          url="https://neovim.io"
+          imgSrc="/buttons/neovim.gif"
+          alt="neovim"
+        />
+
+        <Button88x31
+          url="https://www.vim.org"
+          imgSrc="/buttons/vim.gif"
+          alt="vim"
+        />
+
+        <Button88x31
+          url="https://home-assistant.io"
+          imgSrc="/buttons/home-assistant.gif"
+          alt="home assistant"
+        />
+
+        <Button88x31
+          url="https://slitrostudio.me"
+          imgSrc="https://slitrostudio.me/Slitro2.png"
+          alt="Slitro Studio"
+        />
+
+        <Button88x31
+          url="https://apple.com"
+          imgSrc="/buttons/apple.gif"
+          alt="apple"
+        />
+
+        <Button88x31
+          url="https://notbyai.fyi"
+          imgSrc="/buttons/notbyai.png"
+          alt="not by ai"
+        />
+
+        <Button88x31
+          url="https://eightyeightthirty.one/#"
+          imgSrc="/buttons/88x31.png"
+          alt="eighty eight thirty one"
+        />
+
+        <Button88x31
+          url="https://anybrowser.org"
+          imgSrc="/buttons/detect.gif"
+          alt="viewable on any browser"
+        />
+
       </div>
     </div>
   );
