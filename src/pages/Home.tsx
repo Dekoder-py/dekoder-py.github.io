@@ -65,6 +65,12 @@ export default function Home() {
         <a href="https://home-assistant.io" target="_blank">
           <img src="/buttons/home-assistant.gif" alt="anybrowser" />
         </a>
+        <a href="https://slitrostudio.me" target="_blank">
+          <img
+            src="https://slitrostudio.me/88by31_slitro.png"
+            alt="Slitro Studio"
+          />
+        </a>
         <a href="https://apple.com" target="_blank">
           <img src="/buttons/apple.gif" alt="apple" />
         </a>
