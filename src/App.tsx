@@ -65,7 +65,7 @@ function App() {
 
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <footer className="items-center justify-center text-center text-latte-text dark:text-macchiato-text p-10 bg-latte-mantle dark:bg-macchiato-mantle">
+      <footer className="items-center justify-center text-center text-latte-text dark:text-macchiato-text p-10 mt-30 bg-latte-mantle dark:bg-macchiato-mantle">
         Made in 2025 by Dekoder-py (Kyle). Source code{" "}
         <a
           href="https://github.com/dekoder-py/codingcorner.dev"
