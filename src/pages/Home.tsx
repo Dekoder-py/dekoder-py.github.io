@@ -69,7 +69,7 @@ export default function Home() {
         </a>
         <a href="https://slitrostudio.me" target="_blank">
           <img
-            src="https://slitrostudio.me/88by31_slitro.png"
+            src="https://slitrostudio.me/Slitro2.png"
             alt="Slitro Studio"
           />
         </a>
