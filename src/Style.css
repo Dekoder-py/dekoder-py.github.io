@@ -22,3 +22,9 @@
   --color-latte-text: #4c4f69;
 }
 
+img {
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: -webkit-optimize-contrast;
+}
