@@ -6,7 +6,7 @@ export default function Home() {
       id="welcome"
       className="h-screen flex flex-col items-center justify-center text-center space-y-8"
     >
-      <h1 className="text-3xl font-bold pt-22">
+      <h1 className="text-3xl font-bold">
         Hello! Welcome to codingcorner.dev!
       </h1>
       <h2 className="text-2xl">You've reached my corner of the internet!</h2>
@@ -117,7 +117,6 @@ export default function Home() {
           imgSrc="/buttons/detect.gif"
           alt="viewable on any browser"
         />
-
       </div>
     </div>
   );
