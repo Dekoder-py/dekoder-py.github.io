@@ -5,11 +5,18 @@ function changeQuote() {
   if (!quoteText) return;
 
   const quoteList = [
-    "neovim is superior to everything",
+    "Neovim is superior to everything",
     "Wow, you found the only actually interactive thing on here!",
     "I am personally offended if your map doesn't have NZ on it",
     "Check out slitrostudio.me next!",
     "Send me an email: kyle@codingcorner.dev",
+    "If it's broken, IT WORKS FOR ME",
+    "C++ is fun",
+    "I like python",
+    "Don't use microsoft edge",
+    "Hello, World!",
+    "Laptop stickers are peak",
+    "The terminal is the only correct place to work",
   ];
   const chosenQuote = quoteList[Math.floor(Math.random() * quoteList.length)];
   quoteText.textContent = chosenQuote;
