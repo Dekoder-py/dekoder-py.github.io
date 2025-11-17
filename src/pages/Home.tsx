@@ -1,5 +1,20 @@
 import Button88x31 from "../components/Button88x31.tsx";
 
+function changeQuote() {
+  const quoteText = document.getElementById("quote");
+  if (!quoteText) return;
+
+  const quoteList = [
+    "neovim is superior to everything",
+    "Wow, you found the only actually interactive thing on here!",
+    "I am personally offended if your map doesn't have NZ on it",
+    "Check out slitrostudio.me next!",
+    "Send me an email: kyle@codingcorner.dev",
+  ];
+  const chosenQuote = quoteList[Math.floor(Math.random() * quoteList.length)];
+  quoteText.textContent = chosenQuote;
+}
+
 export default function Home() {
   return (
     <div
@@ -41,6 +56,14 @@ export default function Home() {
           </a>
           !
         </p>
+      </section>
+
+      <section
+        id="quote-section"
+        onClick={changeQuote}
+        className="px-80 border-rounded border-2 dark:bg-macchiato-lavender dark:text-macchiato-surface-0 text-latte-surface-0 bg-latte-lavender"
+      >
+        <p id="quote">Click me for fun words ;)</p>
       </section>
 
       <div
