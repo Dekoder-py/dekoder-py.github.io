@@ -6,7 +6,7 @@ Made for [Personal Site YSWS](https://page.hackclub.com), a Hack Club You Ship W
 - React routing for a home page, projects page, and a my gear page!
 - TailwindCSS!
 - Custom react components for the projects and gear.
-- [Catppuccin Mocha](https://catppuccin.com) styling.
+- [Catppuccin Macchiato (Dark) and Catppuccin Latte (Light)](https://catppuccin.com) styling.
 - A grid of 88x31 buttons, including one designed by me.
 
 ## Tech Stack
