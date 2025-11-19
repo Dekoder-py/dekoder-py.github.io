@@ -58,11 +58,11 @@ export default function Home() {
   }, []);
 
   return (
-    <div id="Home">
-      <div
-        id="welcome"
-        className="min-h-screen flex flex-col items-center justify-center text-center space-y-8"
-      >
+    <div
+      id="home"
+      className="min-h-screen flex flex-col items-center justify-center text-center space-y-8"
+    >
+      <div id="welcome" className="items-center justify-center text-center flex flex-col">
         <img
           src="/assets/pfp.png"
           height={150}
