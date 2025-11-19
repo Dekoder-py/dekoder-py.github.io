@@ -25,21 +25,32 @@ function changeQuote() {
 }
 
 export default function Home() {
-  const [song, setSong] = useState<string>("loading...");
+  const [songText, setSongText] = useState<string>("loading...");
 
   useEffect(() => {
     const fetchSong = async () => {
       const track = await getLastPlayedTrack();
       if (track) {
         const isPlaying = track["@attr"]?.nowplaying === "true";
-        const songText = `${track.name} by ${track.artist["#text"]}`;
-        setSong(isPlaying ? `🎵 ${songText}` : songText);
+        const song = `${track.name} by ${track.artist["#text"]}`;
+        setSongText(
+          isPlaying
+            ? `I'm currently listening to ${song}`
+            : `The last song I listened to was ${song} on ${track["date"]?.["#text"]}`,
+        );
       } else {
-        setSong("couldn't load song data");
+        setSongText(
+          "Couldn't load song data from LastFM! (Please let me know if the issue persists - kyle@codingcorner.dev)",
+        );
       }
     };
+    
     fetchSong();
+    const interval = setInterval(fetchSong, 120 * 1000);
+    
+    return () => clearInterval(interval);
   }, []);
+
   return (
     <div
       id="welcome"
@@ -81,7 +92,7 @@ export default function Home() {
           !
         </p>
 
-        <p id="songs"> The last song I listened to was {song} </p>
+        <p id="song">{songText}</p>
       </section>
 
       <section
