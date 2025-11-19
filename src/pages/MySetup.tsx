@@ -6,12 +6,12 @@ export default function MySetup() {
     {
       itemName: "M1 MacBook Air (2020)",
       url: "https://support.apple.com/en-us/111883",
-      desc: "It has lots of stickers from Hack Club",
+      desc: "Covered in Hack Clubn stickers!",
     },
     {
       itemName: "Keychron V1",
       url: "https://www.keychron.com/products/keychron-v1-qmk-via-custom-mechanical-keyboard",
-      desc: "Customised with QMK and it has a volume knob!",
+      desc: "Customised QMK firmware and it a volume knob!",
     },
     {
       itemName: "Logi MX Master 3S",
@@ -30,17 +30,17 @@ export default function MySetup() {
     {
       itemName: "Apple Watch SE (2nd Generation)",
       url: "https://support.apple.com/en-nz/111853",
-      desc: "I have a couple of bands too.",
+      desc: "I have a few bands too.",
     },
     {
       itemName: "CMF Buds Pro 2",
       url: "https://intl.nothing.tech/products/cmf-buds-pro-2?Colour=Dark+Grey",
-      desc: "I got them from Summer of Making!",
+      desc: "I got them from Hack Club's Summer of Making!",
     },
     {
       itemName: "Rubber Duck with a laptop",
       url: "https://sunnysideducks.com.au/products/rubber-duck-with-notebook-rubber-duck?_pos=1&_sid=9f2f6d086&_ss=r",
-      desc: "I got this with a grant from Summer of Making!",
+      desc: "For rubber duck debugging! Got it with a grant from Summer of Making!",
     },
   ];
 
