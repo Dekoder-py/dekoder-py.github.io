@@ -32,8 +32,11 @@ export default function Home() {
       const track = await getLastPlayedTrack();
       if (track) {
         const isPlaying = track["@attr"]?.nowplaying === "true";
-        const lastPlayedIndex = track["date"]?.["#text"].indexOf(',');
-        const lastPlayed = track["date"]?.["#text"].substring(0, lastPlayedIndex);
+        const lastPlayedIndex = track["date"]?.["#text"].indexOf(",");
+        const lastPlayed = track["date"]?.["#text"].substring(
+          0,
+          lastPlayedIndex,
+        );
         const song = `${track.name} by ${track.artist["#text"]}`;
         setSongText(
           isPlaying
@@ -46,10 +49,10 @@ export default function Home() {
         );
       }
     };
-    
+
     fetchSong();
     const interval = setInterval(fetchSong, 120 * 1000);
-    
+
     return () => clearInterval(interval);
   }, []);
 
@@ -94,7 +97,9 @@ export default function Home() {
           !
         </p>
 
-        <p id="song">{songText}</p>
+        <p id="song">
+          <b>{songText}</b>
+        </p>
       </section>
 
       <section
