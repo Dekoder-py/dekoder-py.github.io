@@ -40,7 +40,7 @@ export default function MySetup() {
     {
       itemName: "Rubber Duck with a laptop",
       url: "https://sunnysideducks.com.au/products/rubber-duck-with-notebook-rubber-duck?_pos=1&_sid=9f2f6d086&_ss=r",
-      desc: "For rubber duck debugging! Got it with a grant from Summer of Making!",
+      desc: "Got it with a grant from Summer of Making!",
     },
   ];
 
