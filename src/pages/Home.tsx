@@ -61,6 +61,7 @@ export default function Home() {
       id="welcome"
       className="min-h-screen flex flex-col items-center justify-center text-center space-y-8"
     >
+      <img src="/assets/pfp.png" height={150} width={150} className="rounded" />
       <h1 className="text-3xl font-bold">
         Hello! Welcome to codingcorner.dev!
       </h1>
