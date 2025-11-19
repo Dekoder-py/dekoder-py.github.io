@@ -6,7 +6,7 @@ export default function MySetup() {
     {
       itemName: "M1 MacBook Air (2020)",
       url: "https://support.apple.com/en-us/111883",
-      desc: "Covered in Hack Clubn stickers!",
+      desc: "Covered in Hack Club stickers!",
     },
     {
       itemName: "Keychron V1",
