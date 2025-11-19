@@ -10,7 +10,7 @@ import "./Style.css";
 function App() {
   return (
     <>
-      <nav className="flex flex-col sm:flex-row items-center justify-between p-4 bg-latte-mantle dark:bg-macchiato-mantle underline mb-20">
+      <nav className="flex flex-col sm:flex-row items-center justify-between p-4 bg-latte-mantle dark:bg-macchiato-mantle underline md:mb-0 sm:mb-20">
         <div
           id="site-links"
           className="flex flex-wrap justify-center sm:justify-start mb-2 sm:mb-0"
