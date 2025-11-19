@@ -108,7 +108,7 @@ export default function Home() {
       <section
         id="quote-section"
         onClick={changeQuote}
-        className="px-4 sm:px-10 md:px-20 lg:px-40 xl:px-80 border-rounded border-2 dark:bg-macchiato-lavender dark:text-macchiato-surface-0 text-latte-surface-0 bg-latte-lavender"
+        className="rounded px-4 sm:px-10 md:px-20 lg:px-40 xl:px-80 dark:bg-macchiato-lavender dark:text-macchiato-surface-0 text-latte-surface-0 bg-latte-lavender"
       >
         <p id="quote">Click me for fun words ;)</p>
       </section>
