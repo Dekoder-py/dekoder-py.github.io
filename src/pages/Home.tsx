@@ -1,4 +1,5 @@
 import Button88x31 from "../components/Button88x31.tsx";
+import { getLastPlayedTrack } from "../LastFM.tsx";
 
 function changeQuote() {
   const quoteText = document.getElementById("quote");
@@ -32,6 +33,7 @@ export default function Home() {
         Hello! Welcome to codingcorner.dev!
       </h1>
       <h2 className="text-2xl">You've reached my corner of the internet!</h2>
+      <button onClick={getLastPlayedTrack}>CLICK</button>
       <section id="about">
         <p className="px-8">
           I'm Kyle, a 16 year old programmer from New Zealand. I make projects,
