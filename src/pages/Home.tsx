@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Button88x31 from "../components/Button88x31.tsx";
 import { getLastPlayedTrack } from "../LastFM.tsx";
 
@@ -24,6 +25,21 @@ function changeQuote() {
 }
 
 export default function Home() {
+  const [song, setSong] = useState<string>("loading...");
+
+  useEffect(() => {
+    const fetchSong = async () => {
+      const track = await getLastPlayedTrack();
+      if (track) {
+        const isPlaying = track["@attr"]?.nowplaying === "true";
+        const songText = `${track.name} by ${track.artist["#text"]}`;
+        setSong(isPlaying ? `🎵 ${songText}` : songText);
+      } else {
+        setSong("couldn't load song data");
+      }
+    };
+    fetchSong();
+  }, []);
   return (
     <div
       id="welcome"
@@ -33,7 +49,6 @@ export default function Home() {
         Hello! Welcome to codingcorner.dev!
       </h1>
       <h2 className="text-2xl">You've reached my corner of the internet!</h2>
-      <button onClick={getLastPlayedTrack}>CLICK</button>
       <section id="about">
         <p className="px-8">
           I'm Kyle, a 16 year old programmer from New Zealand. I make projects,
@@ -65,6 +80,8 @@ export default function Home() {
           </a>
           !
         </p>
+
+        <p id="songs"> The last song I listened to was {song} </p>
       </section>
 
       <section
