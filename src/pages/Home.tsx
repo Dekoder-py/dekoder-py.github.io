@@ -58,15 +58,22 @@ export default function Home() {
   }, []);
 
   return (
-    <div
-      id="welcome"
-      className="min-h-screen flex flex-col items-center justify-center text-center space-y-8"
-    >
-      <img src="/assets/pfp.png" height={150} width={150} className="rounded" />
-      <h1 className="text-3xl font-bold">
-        Hello! Welcome to codingcorner.dev!
-      </h1>
-      <h2 className="text-2xl">You've reached my corner of the internet!</h2>
+    <div id="Home">
+      <div
+        id="welcome"
+        className="min-h-screen flex flex-col items-center justify-center text-center space-y-8"
+      >
+        <img
+          src="/assets/pfp.png"
+          height={150}
+          width={150}
+          className="rounded"
+        />
+        <h1 className="text-3xl font-bold">
+          Hello! Welcome to codingcorner.dev!
+        </h1>
+        <h2 className="text-2xl">You've reached my corner of the internet!</h2>
+      </div>
       <section id="about">
         <p className="px-8">
           I'm Kyle, a 16 year old programmer from New Zealand. I make projects,
@@ -98,7 +105,6 @@ export default function Home() {
           </a>
           !
         </p>
-
 
         <p id="song" className="mt-5">
           <b>{songText}</b>
