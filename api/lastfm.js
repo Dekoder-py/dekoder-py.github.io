@@ -1,4 +1,4 @@
-export default async function handler(res) {
+export default async function handler(req, res) {
   const USERNAME = "your-nemesis";
   const API_KEY = process.env.LASTFM_API_KEY;
 
