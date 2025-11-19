@@ -97,7 +97,8 @@ export default function Home() {
           !
         </p>
 
-        <p id="song">
+
+        <p id="song" className="mt-5">
           <b>{songText}</b>
         </p>
       </section>
