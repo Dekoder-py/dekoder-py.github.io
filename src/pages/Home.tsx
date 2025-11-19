@@ -32,11 +32,13 @@ export default function Home() {
       const track = await getLastPlayedTrack();
       if (track) {
         const isPlaying = track["@attr"]?.nowplaying === "true";
+        const lastPlayedIndex = track["date"]?.["#text"].indexOf(',');
+        const lastPlayed = track["date"]?.["#text"].substring(0, lastPlayedIndex);
         const song = `${track.name} by ${track.artist["#text"]}`;
         setSongText(
           isPlaying
-            ? `I'm currently listening to ${song}`
-            : `The last song I listened to was ${song} on ${track["date"]?.["#text"]}`,
+            ? `I'm currently listening to ${song}!`
+            : `The last song I listened to was ${song} on ${lastPlayed}.`,
         );
       } else {
         setSongText(
