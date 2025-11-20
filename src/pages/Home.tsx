@@ -124,7 +124,7 @@ export default function Home() {
       <h2 className="text-2xl">The 88x31 Grid</h2>
       <span>
         Feel free to add my button to your site with
-        <code className="block whitespace-pre-wrap">
+        <code className="block whitespace-pre-wrap p-2">
           {`<a href="https://codingcorner.dev/"><img alt="Coding Corner" src="https://codingcorner.dev/buttons/codingcorner.png" /></a>`}
         </code>
       </span>
