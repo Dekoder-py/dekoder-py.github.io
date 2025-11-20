@@ -62,7 +62,10 @@ export default function Home() {
       id="home"
       className="min-h-screen flex flex-col items-center justify-center text-center space-y-8"
     >
-      <div id="welcome" className="items-center justify-center text-center flex flex-col">
+      <div
+        id="welcome"
+        className="items-center justify-center text-center flex flex-col"
+      >
         <img
           src="/assets/pfp.png"
           height={150}
@@ -110,7 +113,6 @@ export default function Home() {
           <b>{songText}</b>
         </p>
       </section>
-
       <section
         id="quote-section"
         onClick={changeQuote}
@@ -118,7 +120,6 @@ export default function Home() {
       >
         <p id="quote">Click me for fun words ;)</p>
       </section>
-
       <div
         id="buttons"
         className="
@@ -126,7 +127,29 @@ export default function Home() {
           md:max-w-[calc(8*88px)] gap-2 place-items-center
         "
       >
-        <Button88x31 imgSrc="/buttons/codingcorner.png" alt="coding corner" />
+        <Button88x31
+          url="https://codingcorner.dev"
+          imgSrc="/buttons/codingcorner.png"
+          alt="coding corner"
+        />
+
+        <Button88x31
+          url="https://site.slitrostudio.me"
+          imgSrc="https://site.slitrostudio.me/Slitro2.png"
+          alt="Slitro Studio"
+        />
+
+        <Button88x31
+          url="https://poy.ooo"
+          imgSrc="/buttons/poyo.png"
+          alt="Poyo"
+        />
+
+        <Button88x31
+          url="https://errorcodezero.dev/"
+          imgSrc="https://errorcodezero.dev/button.png"
+          alt="ErrorCode0"
+        />
 
         <Button88x31
           url="https://hack.club"
@@ -162,18 +185,6 @@ export default function Home() {
           url="https://home-assistant.io"
           imgSrc="/buttons/home-assistant.gif"
           alt="home assistant"
-        />
-
-        <Button88x31
-          url="https://site.slitrostudio.me"
-          imgSrc="https://site.slitrostudio.me/Slitro2.png"
-          alt="Slitro Studio"
-        />
-
-        <Button88x31
-          url="https://poy.ooo"
-          imgSrc="/buttons/poyo.png"
-          alt="Poyo"
         />
 
         <Button88x31
