@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Button88x31 from "../components/Button88x31.tsx";
 import { getLastPlayedTrack } from "../LastFM.tsx";
+import CopySnippet from "../components/CopySnippet.tsx";
 
 function changeQuote() {
   const quoteText = document.getElementById("quote");
@@ -123,10 +124,7 @@ export default function Home() {
 
       <h2 className="text-2xl">The 88x31 Grid</h2>
       <span>
-        Feel free to add my button to your site with
-        <code className="block whitespace-pre-wrap p-2">
-          {`<a href="https://codingcorner.dev/"><img alt="Coding Corner" src="https://codingcorner.dev/buttons/codingcorner.png" /></a>`}
-        </code>
+        Copy my button code to add it to your site: <CopySnippet />
       </span>
 
       <div
