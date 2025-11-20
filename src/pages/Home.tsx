@@ -220,6 +220,12 @@ export default function Home() {
         />
 
         <Button88x31
+          url="https://catppuccin.com"
+          imgSrc="/buttons/ctp.webp"
+          alt="catppuccin"
+        />
+
+        <Button88x31
           url="https://apple.com"
           imgSrc="/buttons/macosmade.gif"
           alt="made with macOS"
