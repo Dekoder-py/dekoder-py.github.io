@@ -9,7 +9,7 @@ import "./Style.css";
 
 function App() {
   return (
-    <>
+    <div id="app" className="bg-latte-base dark:bg-macchiato-base text-latte-text dark:text-macchiato-text">
       <nav className="flex flex-col sm:flex-row items-center justify-between p-4 bg-latte-mantle dark:bg-macchiato-mantle underline mb-20 md:mb-0">
         <div
           id="site-links"
@@ -77,7 +77,7 @@ function App() {
         .
       </footer>
       <Analytics />
-    </>
+    </div>
   );
 }
 
