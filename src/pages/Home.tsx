@@ -112,14 +112,51 @@ export default function Home() {
 
         <div
           id="webring"
-          className="items-center justify-center text-center flex"
+          className="my-8 items-center justify-center text-center flex"
         >
-          <iframe
-            style={{ border: "none" }}
-            src="https://webring.hackclub.com/embed.html"
-            width="90px"
-            height="60px"
-          ></iframe>
+          <a href="https://ctp-webr.ing/codingcorner/previous">
+            <svg
+              className="arrow-icon"
+              width="42"
+              height="42"
+              viewBox="0 0 24 24"
+              fill="#cdd6f4"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 12H19M5 12L11 6M5 12L11 18"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </a>
+          <a href="https://ctp-webr.ing/">
+            <img
+              src="/assets/catppuccin-logo.png"
+              height={42}
+              width={42}
+              alt="Catppuccin Webring"
+            />
+          </a>
+          <a href="https://ctp-webr.ing/codingcorner/next">
+            <svg
+              className="arrow-icon"
+              width="42"
+              height="42"
+              viewBox="0 0 24 24"
+              fill="#cdd6f4"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 12H19M19 12L13 6M19 12L13 18"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              ></path>
+            </svg>
+          </a>
         </div>
 
         <p id="song" className="mt-5">
