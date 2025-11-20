@@ -171,6 +171,12 @@ export default function Home() {
         />
 
         <Button88x31
+          url="https://poy.ooo"
+          imgSrc="/buttons/poyo.png"
+          alt="Poyo"
+        />
+
+        <Button88x31
           url="https://apple.com"
           imgSrc="/buttons/apple.gif"
           alt="apple"
