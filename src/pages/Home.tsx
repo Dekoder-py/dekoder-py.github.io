@@ -110,6 +110,18 @@ export default function Home() {
           !
         </p>
 
+        <div
+          id="webring"
+          className="items-center justify-center text-center flex"
+        >
+          <iframe
+            style={{ border: "none" }}
+            src="https://webring.hackclub.com/embed.html"
+            width="90px"
+            height="60px"
+          ></iframe>
+        </div>
+
         <p id="song" className="mt-5">
           <b>{songText}</b>
         </p>
