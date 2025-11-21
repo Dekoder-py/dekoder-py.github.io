@@ -120,9 +120,6 @@ export default function Home() {
             The Webrings
           </h2>
 
-          <p className="text-latte-rosewater dark:text-macchiato-rosewater">
-            Check out other sites in the Catppuccin webring!
-          </p>
           <div id="catp webring stuuf" className="flex mt-2">
             <a href="https://ctp-webr.ing/codingcorner/previous">
               <svg
@@ -168,7 +165,12 @@ export default function Home() {
               </svg>
             </a>
           </div>
-          <iframe style={{ border: "none" }} src="https://webring.hackclub.com/embed.html" width="90px" height="60px" />
+          <iframe
+            style={{ border: "none" }}
+            src="https://webring.hackclub.com/embed.html"
+            width="90px"
+            height="60px"
+          />
         </div>
 
         <p id="song" className="mt-5">
