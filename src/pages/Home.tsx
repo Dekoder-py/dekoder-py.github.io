@@ -219,6 +219,8 @@ export default function Home() {
           alt="ErrorCode0"
         />
 
+        <Button88x31 url="https://bomberfish.ca" imgSrc="https://bomberfish.ca/button.gif" alt="BomberFish" />
+
         <Button88x31
           url="https://hack.club"
           imgSrc="/buttons/hackclub.gif"
