@@ -133,9 +133,9 @@ export default function Home() {
                 <path
                   d="M5 12H19M5 12L11 6M5 12L11 18"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></path>
               </svg>
             </a>
@@ -159,8 +159,8 @@ export default function Home() {
                 <path
                   d="M5 12H19M19 12L13 6M19 12L13 18"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
                 ></path>
               </svg>
             </a>
