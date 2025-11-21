@@ -120,7 +120,7 @@ export default function Home() {
             The Webring
           </h2>
           <p className="text-latte-rosewater dark:text-macchiato-rosewater">
-            Check out other sites in the catppuccin webring!
+            Check out other sites in the Catppuccin webring!
           </p>
           <div id="webring stuuf" className="flex mt-2">
             <a href="https://ctp-webr.ing/codingcorner/previous">
