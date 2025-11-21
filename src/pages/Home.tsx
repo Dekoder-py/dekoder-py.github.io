@@ -76,7 +76,9 @@ export default function Home() {
         <h1 className="text-3xl font-bold text-latte-text dark:text-macchiato-text">
           Hello! Welcome to codingcorner.dev!
         </h1>
-        <h2 className="text-2xl text-latte-lavender dark:text-macchiato-lavender">You've reached my corner of the internet!</h2>
+        <h2 className="text-2xl text-latte-lavender dark:text-macchiato-lavender">
+          You've reached my corner of the internet!
+        </h2>
       </div>
       <section id="about">
         <p className="px-8">
@@ -114,7 +116,12 @@ export default function Home() {
           id="webring"
           className="my-8 items-center text-center flex flex-col"
         >
-          <p className="text-latte-rosewater dark:text-macchiato-rosewater">Check out other sites in the catppuccin webring!</p>
+          <h2 className="text-2xl text-latte-lavender dark:text-macchiato-lavender">
+            The Webring
+          </h2>
+          <p className="text-latte-rosewater dark:text-macchiato-rosewater">
+            Check out other sites in the catppuccin webring!
+          </p>
           <div id="webring stuuf" className="flex mt-2">
             <a href="https://ctp-webr.ing/codingcorner/previous">
               <svg
@@ -174,7 +181,9 @@ export default function Home() {
         <p id="quote">Click me for fun words ;)</p>
       </section>
 
-      <h2 className="text-2xl text-latte-lavender dark:text-macchiato-lavender">The 88x31 Grid</h2>
+      <h2 className="text-2xl text-latte-lavender dark:text-macchiato-lavender">
+        The 88x31 Grid
+      </h2>
       <span>
         Copy my button code to add it to your site: <CopySnippet />
       </span>
