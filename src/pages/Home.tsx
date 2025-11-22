@@ -119,8 +119,10 @@ export default function Home() {
           <h2 className="text-2xl text-latte-lavender dark:text-macchiato-lavender">
             The Webrings
           </h2>
-          
-          <p className="text-latte-rosewater dark:text-macchiato-rosewater mt-2">Catppuccin Webring!</p>
+
+          <p className="text-latte-rosewater dark:text-macchiato-rosewater mt-2">
+            Catppuccin Webring!
+          </p>
           <div id="catp webring stuuf" className="flex mt-2">
             <a href="https://ctp-webr.ing/codingcorner/previous">
               <svg
