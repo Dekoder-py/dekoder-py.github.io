@@ -207,6 +207,36 @@ export default function Home() {
               alt="a black rectangle outlined in animated, shifting red and blue pixels, moving around the sign. there are two arrows, one pointing left and one right, protruding from the sign. on the sign are the words THE NO AI WEBRING and a small question mark beside them"
             />
           </div>
+          <div id="webmasterwebring-widget" className="mt-2">
+            <map name="badge-wwstamp">
+              <area
+                shape="rect"
+                coords="66,38,79,49"
+                href="https://webmasterwebring.netlify.app?YOURSLUG-previous"
+                alt="Previous"
+              />
+              <area
+                shape="rect"
+                coords="78,29,90,40"
+                href="https://webmasterwebring.netlify.app?YOURSLUG-next"
+                alt="Next"
+              />
+              <area
+                shape="rect"
+                coords="13,15,63,47"
+                href="https://webmasterwebring.netlify.app"
+                alt="Webmaster Webring"
+              />
+            </map>
+            <img
+              useMap="#badge-wwstamp"
+              id="ww-stamp"
+              src="https://file.garden/ZrZSgsrYfQXsO7QH/ww/stamp.png"
+              alt="Webmaster Webring"
+              width="99"
+              height="56"
+            />
+          </div>
         </div>
 
         <p id="song" className="mt-5">
@@ -281,6 +311,12 @@ export default function Home() {
           url="https://catppuccin.com"
           imgSrc="/buttons/ctp.webp"
           alt="catppuccin"
+        />
+
+        <Button88x31
+          url="https://webmasterwebring.netlify.app"
+          imgSrc="https://file.garden/ZrZSgsrYfQXsO7QH/ww/btn.png"
+          alt="Webmaster Webring"
         />
 
         <Button88x31
