@@ -212,13 +212,13 @@ export default function Home() {
               <area
                 shape="rect"
                 coords="66,38,79,49"
-                href="https://webmasterwebring.netlify.app?YOURSLUG-previous"
+                href="https://webmasterwebring.netlify.app?codingcorner-previous"
                 alt="Previous"
               />
               <area
                 shape="rect"
                 coords="78,29,90,40"
-                href="https://webmasterwebring.netlify.app?YOURSLUG-next"
+                href="https://webmasterwebring.netlify.app?codingcorner-next"
                 alt="Next"
               />
               <area
