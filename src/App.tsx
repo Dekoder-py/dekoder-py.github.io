@@ -1,6 +1,6 @@
 import { Routes, Route, Link } from "react-router-dom";
 import { Analytics } from "@vercel/analytics/react";
-import { LuGithub, LuMail } from "react-icons/lu";
+import { LuGithub, LuMail, LuSlack } from "react-icons/lu";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import MySetup from "./pages/MySetup";
@@ -42,6 +42,12 @@ function App() {
         </div>
 
         <div id="contact" className="flex space-x-4">
+          <a href="https://hackclub.slack.com/team/U091HG1TP6K"
+            target="_blank"
+            className="hover:text-latte-blue dark:hover:text-macchiato-blue"
+            >
+            <LuSlack className="w-5 h-5" />
+          </a>
           <a
             href="https://github.com/Dekoder-py"
             target="_blank"
