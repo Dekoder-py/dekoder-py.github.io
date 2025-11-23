@@ -169,11 +169,11 @@ export default function Home() {
             </a>
           </div>
           <div id="noairing" className="mt-2">
-            <map name="noaimini7b">
+            <map name="noaimini10b">
               <area
                 href="https://baccyflap.com/noai"
-                shape="rect"
-                coords="30,6,144,54"
+                shape="poly"
+                coords="38,6,38,18,60,18,60,42,38,42,38,58,136,58,136,6"
                 target="_blank"
                 alt="no ai webring"
                 title="no ai webring"
@@ -182,24 +182,32 @@ export default function Home() {
                 href="https://baccyflap.com/noai/?prv&s=kcc"
                 target="_top"
                 shape="rect"
-                coords="6,12,24,54"
+                coords="0,0,32,40"
                 alt="previous"
                 title="previous"
+              />
+              <area
+                href="https://baccyflap.com/noai/?rnd"
+                target="_top"
+                shape="rect"
+                coords="40,24,56,40"
+                alt="random"
+                title="random"
               />
               <area
                 href="https://baccyflap.com/noai/?nxt&s=kcc"
                 target="_top"
                 shape="rect"
-                coords="150,12,168,54"
+                coords="142,20,174,60"
                 alt="next"
                 title="next"
               />
             </map>
             <img
               style={{ width: "176px", imageRendering: "pixelated" }}
-              useMap="#noaimini7b"
-              src="https://baccyflap.com/noai/miniwidget7.gif"
-              alt="a green-on-black grid with illuminated parts that spell out NO AI / WEBRING and two animated green arrows pointing left and right, bobbing up and down"
+              useMap="#noaimini10b"
+              src="https://baccyflap.com/noai/miniwidget10.gif"
+              alt="a black rectangle outlined in animated, shifting red and blue pixels, moving around the sign. there are two arrows, one pointing left and one right, protruding from the sign. on the sign are the words THE NO AI WEBRING and a small question mark beside them"
             />
           </div>
         </div>
