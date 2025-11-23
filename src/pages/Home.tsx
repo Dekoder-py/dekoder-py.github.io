@@ -168,6 +168,40 @@ export default function Home() {
               </svg>
             </a>
           </div>
+          <div id="noairing" className="mt-2">
+            <map name="noaimini7b">
+              <area
+                href="https://baccyflap.com/noai"
+                shape="rect"
+                coords="30,6,144,54"
+                target="_blank"
+                alt="no ai webring"
+                title="no ai webring"
+              />
+              <area
+                href="https://baccyflap.com/noai/?prv&s=kcc"
+                target="_top"
+                shape="rect"
+                coords="6,12,24,54"
+                alt="previous"
+                title="previous"
+              />
+              <area
+                href="https://baccyflap.com/noai/?nxt&s=kcc"
+                target="_top"
+                shape="rect"
+                coords="150,12,168,54"
+                alt="next"
+                title="next"
+              />
+            </map>
+            <img
+              style={{ width: "176px", imageRendering: "pixelated" }}
+              useMap="#noaimini7b"
+              src="https://baccyflap.com/noai/miniwidget7.gif"
+              alt="a green-on-black grid with illuminated parts that spell out NO AI / WEBRING and two animated green arrows pointing left and right, bobbing up and down"
+            />
+          </div>
         </div>
 
         <p id="song" className="mt-5">
