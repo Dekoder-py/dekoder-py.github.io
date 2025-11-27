@@ -4,9 +4,9 @@ import type { GearItem } from "../types";
 export default function MySetup() {
   const MyGear: GearItem[] = [
     {
-      itemName: "M1 MacBook Air (2020)",
-      url: "https://support.apple.com/en-us/111883",
-      desc: "Covered in Hack Club stickers!",
+      itemName: "M5 MacBook Pro",
+      url: "https://support.apple.com/en-us/125405",
+      desc: "In space black. It's very nice :D",
     },
     {
       itemName: "Keychron V1",
@@ -25,7 +25,7 @@ export default function MySetup() {
     {
       itemName: "iPhone 13 Mini",
       url: "https://support.apple.com/en-us/111873",
-      desc: "I don't have a phone case."
+      desc: "I don't have a phone case.",
     },
     {
       itemName: "Apple Watch SE (2nd Generation)",
