@@ -296,6 +296,18 @@ export default function Home() {
         />
 
         <Button88x31
+          url="https://aconlin.com"
+          imgSrc="/buttons/acon.gif"
+          alt="Acon"
+        />
+
+        <Button88x31
+          url="http://gideon.sh/"
+          imgSrc="/buttons/gideon.gif"
+          alt="Gideon"
+        />
+
+        <Button88x31
           url="https://hack.club"
           imgSrc="/buttons/hackclub.gif"
           alt="hack club"
