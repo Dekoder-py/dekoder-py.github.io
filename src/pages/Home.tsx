@@ -308,6 +308,12 @@ export default function Home() {
         />
 
         <Button88x31
+          url="https://www.valen.zip"
+          imgSrc="https://www.valen.zip/button-bw.gif"
+          alt="valen's site's black and white 88x31 button"
+        />
+
+        <Button88x31
           url="https://hack.club"
           imgSrc="/buttons/hackclub.gif"
           alt="hack club"
