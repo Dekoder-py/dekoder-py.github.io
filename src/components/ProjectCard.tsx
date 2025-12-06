@@ -22,7 +22,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         <img
           src={project.imgUrl}
           alt={"Thumbnail image for " + project.name}
-          className="border-2 border-solid border-latte-blue rounded-sm dark:border-macchiato-blue"
+          className="border-2 border-solid border-latte-blue rounded-sm dark:border-macchiato-blue mx-auto"
         />
         <h1 className="font-bold pt-10">{project.name}</h1>
         <p>{project.description}</p>
