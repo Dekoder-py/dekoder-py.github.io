@@ -4,6 +4,24 @@ import type { Project } from "../types";
 export default function Projects() {
   const projects: Project[] = [
     {
+      name: "Slack Annoyance",
+      description: (
+        <p>
+          A slack bot, written in python, that uses{" "}
+          <a
+            href="https://ai.hackclub.com/"
+            className="underline hover:text-latte-blue dark:hover:text-macchiato-blue hover:font-bold"
+            target="_blank"
+          >
+            Hack Club AI
+          </a>{" "}
+          to respond sarcastically to messages.
+        </p>
+      ),
+      url: "https://github.com/heycastawhat/slack-annoyance",
+      imgUrl: "/assets/slack-annoyance.png",
+    },
+    {
       name: "Virus Shooter",
       description: (
         <p>
