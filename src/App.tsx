@@ -4,12 +4,16 @@ import { LuGithub, LuMail, LuSlack } from "react-icons/lu";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import MySetup from "./pages/MySetup";
+import Guestbook from "./pages/Guestbook";
 import NotFound from "./pages/NotFound";
 import "./Style.css";
 
 function App() {
   return (
-    <div id="app" className="bg-latte-base dark:bg-macchiato-base text-latte-text dark:text-macchiato-text">
+    <div
+      id="app"
+      className="bg-latte-base dark:bg-macchiato-base text-latte-text dark:text-macchiato-text"
+    >
       <nav className="flex flex-col sm:flex-row items-center justify-between p-4 bg-latte-mantle dark:bg-macchiato-mantle underline mb-20 md:mb-0">
         <div
           id="site-links"
@@ -39,13 +43,20 @@ function App() {
           >
             Blog
           </Link>
+          <Link
+            className="mr-4 hover:text-latte-blue dark:hover:text-macchiato-blue"
+            to="/guestbook"
+          >
+            Guestbook
+          </Link>
         </div>
 
         <div id="contact" className="flex space-x-4">
-          <a href="https://hackclub.slack.com/team/U091HG1TP6K"
+          <a
+            href="https://hackclub.slack.com/team/U091HG1TP6K"
             target="_blank"
             className="hover:text-latte-blue dark:hover:text-macchiato-blue"
-            >
+          >
             <LuSlack className="w-5 h-5" />
           </a>
           <a
@@ -68,6 +79,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/my-setup" element={<MySetup />} />
+        <Route path="/guestbook" element={<Guestbook />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>
