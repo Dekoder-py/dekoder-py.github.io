@@ -71,7 +71,7 @@ export default function Home() {
           src="/assets/pfp.png"
           height={150}
           width={150}
-          className="rounded"
+          className="rounded pt-2"
         />
         <h1 className="text-3xl font-bold text-latte-text dark:text-macchiato-text">
           Hello! Welcome to codingcorner.dev!
