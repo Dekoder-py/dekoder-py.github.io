@@ -12,6 +12,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
       border-4 border-solid border-latte-lavender dark:border-macchiato-lavender
       w-full max-w-sm
       rounded-lg shadow-md p-4 flex flex-col
+      min-h-80
       bg-latte-surface-0 dark:bg-macchiato-surface-0
       hover:shadow-2xl hover:scale-[1.02]
       hover:bg-latte-surface-1 dark:hover:bg-macchiato-surface-1
