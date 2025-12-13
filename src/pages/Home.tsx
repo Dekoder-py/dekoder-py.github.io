@@ -73,10 +73,10 @@ export default function Home() {
           width={150}
           className="rounded pt-2"
         />
-        <h1 className="text-3xl font-bold text-latte-text dark:text-macchiato-text">
+        <h1 className="text-3xl font-bold text-macchiato-text">
           Hello! Welcome to codingcorner.dev!
         </h1>
-        <h2 className="text-2xl text-latte-lavender dark:text-macchiato-lavender">
+        <h2 className="text-2xl text-macchiato-lavender">
           You've reached my corner of the internet!
         </h2>
       </div>
@@ -86,7 +86,7 @@ export default function Home() {
           like{" "}
           <a
             href="https://pypi.org/project/restless-dungeon/"
-            className="underline hover:text-latte-blue dark:hover:text-macchiato-blue"
+            className="underline hover:text-macchiato-blue"
           >
             this
           </a>
@@ -94,7 +94,7 @@ export default function Home() {
           <a
             href="https://hack.club"
             target="_blank"
-            className="underline hover:text-latte-blue dark:hover:text-macchiato-blue"
+            className="underline hover:text-macchiato-blue"
           >
             Hack Club
           </a>
@@ -105,7 +105,7 @@ export default function Home() {
           <a
             href="https://github.com/dekoder-py"
             target="_blank"
-            className="underline hover:text-latte-blue dark:hover:text-macchiato-blue"
+            className="underline hover:text-macchiato-blue"
           >
             GitHub
           </a>
@@ -116,7 +116,7 @@ export default function Home() {
           id="webring"
           className="my-8 items-center text-center flex flex-col"
         >
-          <h2 className="text-2xl text-latte-lavender dark:text-macchiato-lavender">
+          <h2 className="text-2xl text-macchiato-lavender">
             The Webrings
           </h2>
 
@@ -246,12 +246,12 @@ export default function Home() {
       <section
         id="quote-section"
         onClick={changeQuote}
-        className="cursor-pointer rounded px-4 sm:px-10 md:px-20 lg:px-40 xl:px-80 dark:bg-macchiato-lavender dark:text-macchiato-surface-0 text-latte-surface-0 bg-latte-lavender"
+        className="cursor-pointer rounded px-4 sm:px-10 md:px-20 lg:px-40 xl:px-80 bg-macchiato-lavender text-macchiato-surface-0"
       >
         <p id="quote">Click me for fun words ;)</p>
       </section>
 
-      <h2 className="text-2xl text-latte-lavender dark:text-macchiato-lavender">
+      <h2 className="text-2xl text-macchiato-lavender">
         The 88x31 Grid
       </h2>
       <span>

@@ -12,39 +12,39 @@ function App() {
   return (
     <div
       id="app"
-      className="bg-latte-base dark:bg-macchiato-base text-latte-text dark:text-macchiato-text"
+      className="bg-macchiato-base text-macchiato-text"
     >
-      <nav className="flex flex-col sm:flex-row items-center justify-between p-4 bg-latte-mantle dark:bg-macchiato-mantle underline mb-20 md:mb-0">
+      <nav className="flex flex-col sm:flex-row items-center justify-between p-4 bg-macchiato-mantle underline mb-20 md:mb-0">
         <div
           id="site-links"
           className="flex flex-wrap justify-center sm:justify-start mb-2 sm:mb-0"
         >
           <Link
-            className="mr-4 hover:text-latte-blue dark:hover:text-macchiato-blue"
+            className="mr-4 hover:text-macchiato-blue"
             to="/"
           >
             Home
           </Link>
           <Link
-            className="mr-4 hover:text-latte-blue dark:hover:text-macchiato-blue"
+            className="mr-4 hover:text-macchiato-blue"
             to="/projects"
           >
             Projects
           </Link>
           <Link
-            className="mr-4 hover:text-latte-blue dark:hover:text-macchiato-blue"
+            className="mr-4 hover:text-macchiato-blue"
             to="/my-setup"
           >
             My Setup
           </Link>
           <Link
-            className="mr-4 hover:text-latte-blue dark:hover:text-macchiato-blue"
+            className="mr-4 hover:text-macchiato-blue"
             to="https://blog.codingcorner.dev"
           >
             Blog
           </Link>
           <Link
-            className="mr-4 hover:text-latte-blue dark:hover:text-macchiato-blue"
+            className="mr-4 hover:text-macchiato-blue"
             to="/guestbook"
           >
             Guestbook
@@ -55,20 +55,20 @@ function App() {
           <a
             href="https://hackclub.slack.com/team/U091HG1TP6K"
             target="_blank"
-            className="hover:text-latte-blue dark:hover:text-macchiato-blue"
+            className="hover:text-macchiato-blue"
           >
             <LuSlack className="w-5 h-5" />
           </a>
           <a
             href="https://github.com/Dekoder-py"
             target="_blank"
-            className="hover:text-latte-blue dark:hover:text-macchiato-blue"
+            className="hover:text-macchiato-blue"
           >
             <LuGithub className="w-5 h-5" />
           </a>
           <a
             href="mailto:kyle@codingcorner.dev"
-            className="hover:text-latte-blue dark:hover:text-macchiato-blue"
+            className="hover:text-macchiato-blue"
           >
             <LuMail className="w-5 h-5" />
           </a>
@@ -83,12 +83,12 @@ function App() {
 
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <footer className="items-center justify-center text-center text-latte-text dark:text-macchiato-text p-10 mt-30 bg-latte-mantle dark:bg-macchiato-mantle">
+      <footer className="items-center justify-center text-center text-macchiato-text p-10 mt-30 bg-macchiato-mantle">
         Made in 2025 by Dekoder-py (Kyle). Source code{" "}
         <a
           href="https://github.com/dekoder-py/codingcorner.dev"
           target="_blank"
-          className="underline hover:text-blue-600 dark:hover:text-blue-400"
+          className="underline hover:text-blue-600 hover:text-blue-400"
         >
           here
         </a>
