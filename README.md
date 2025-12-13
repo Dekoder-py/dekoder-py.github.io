@@ -8,7 +8,7 @@ This site is a part of the [Catppuccin Webring](https://ctp-webr.ing/), the [Web
 - React routing for a home page, projects page, and a my gear page!
 - TailwindCSS!
 - Custom react components for the projects and gear.
-- [Catppuccin Macchiato (Dark) and Catppuccin Latte (Light)](https://catppuccin.com) styling.
+- [Catppuccin Macchiato](https://catppuccin.com) styling.
 - A grid of 88x31 buttons, including one designed by me.
 
 ## Tech Stack
