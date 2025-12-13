@@ -3,7 +3,7 @@ import Giscus from "@giscus/react";
 export default function Guestbook() {
   return (
     <div className="min-h-screen">
-      <h1 className="font-bold text-3xl py-8 text-center">The Guestbook</h1>
+      <h1 className="font-bold text-3xl py-8 text-center text-macchiato-text">The Guestbook</h1>
       <Giscus
         repo="dekoder-py/codingcorner.dev"
         repoId="R_kgDOP_sp8w"

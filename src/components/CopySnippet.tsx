@@ -21,7 +21,7 @@ export default function CopySnippet() {
   return (
       <button
         onClick={copy}
-        className="px-2 py-1 rounded bg-latte-blue dark:bg-macchiato-blue text-latte-surface-0 dark:text-macchiato-surface-0 text-sm hover:opacity-90 transition"
+        className="px-2 py-1 rounded bg-macchiato-blue text-macchiato-surface-0 text-sm hover:opacity-90 transition"
       >
         {copied ? "Copied :)" : "click here to copy!"}
       </button>
